@@ -1,0 +1,41 @@
+:root {
+    --LidsBlue: #001E4E;
+    --LidsGrey: #D9D9D9;
+    --LidsWhite: white;
+}
+
+
+.excelPic {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 10px var(--LidsBlue);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 50px;
+}
+
+table, th, td {
+    border-bottom: 1px solid var(--LidsBlue);
+    border-collapse: collapse;
+    vertical-align: middle;
+    padding: 5px;
+
+}
+
+.headings {
+    text-align: left;
+    background-color: #001E4E;
+    color: var(--LidsWhite)
+}
+
+.data {
+    text-align: left;
+    background-color: var(--LidsWhite);
+    color: var(--LidsBlue);
+}
+
+#dataInfo {
+    width: auto;
+}
+
