@@ -1,0 +1,6 @@
+<form action="" method="GET">
+  <div class="input-group">
+    <input type="text" name="search" value="<?php if(isset($_GET['search'])){echo $_GET['search']; ?>" class="form-control" placeholder="Search for SKU">
+    <button type="submit" class="btn btn-primary">Search</button>
+  </div>
+ </form>
