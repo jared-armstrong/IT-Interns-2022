@@ -1,9 +1,9 @@
 function navToHome() {
-    window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/index.html";
+    window.location.href = "index.html";
 }
 
 function navToPricing() {
-    window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/pricingHome.html";
+    window.location.href = "pricingHome.html";
 }
 
 function navToGenerate() {
