@@ -83,7 +83,7 @@ nav, #footer {
 }
 
 /* Main content stylings */
-.contcontainer {
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,14 +116,14 @@ body {
 When height decreased, flex items need to change to 
 block or items will overflow upwards and not be visible */
 @media screen and (max-height: 350px) {
-    .contcontainer {
+    .container {
         display: block;
         height: auto;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .contcontainer {
+    .container {
         height: auto;
     }
     .navgrid {
