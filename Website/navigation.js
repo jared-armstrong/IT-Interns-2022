@@ -7,29 +7,29 @@ function navToPricing() {
 }
 
 function navToGenerate() {
-    window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/homeSKU.html";
+    window.location.href = "homeSKU.html";
 }
 
 function navToFinder() {
-    window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/findSKU.html";
+    window.location.href = "findSKU.html";
 }
 
 function navToUPC() {
-    window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/upcUpload.html";
+    window.location.href = "upcUpload.html";
 }
 
 function navToManual() {
-    window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/singleSKU.html";
+    window.location.href = "singleSKU.html";
 }
 
 function navToMassSKU() {
-    window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/massSKU.html";
+    window.location.href = "massSKU.html";
 }
 
 function navToSinglePrice() {
-    window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/singlePrice.html";
+    window.location.href = "singlePrice.html";
 }
 
 function navToMassPrice() {
-    window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/massPrice.html";
+    window.location.href = "massPrice.html";
 }
