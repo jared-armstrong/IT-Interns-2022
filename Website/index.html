@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PPS Home Page</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="navigation.js"></script>
 </head>
 <body>
     <nav>
@@ -13,40 +14,40 @@
             <a href="#"><img src="images/Logo.png"></a>
                 <h1>Product Processing System</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">SKU Generator</a></li>
-                    <li><a href="#">SKU Finder</a></li>
-                    <li><a href="#">UPC Upload</a></li>
+                    <li onclick="navToHome()"><a href="#">Home</a></li>
+                    <li onclick="navToPricing()"><a href="#">Pricing</a></li>
+                    <li onclick="navToGenerate()"><a href="#">SKU Generator</a></li>
+                    <li onclick="navToFinder()"><a href="#">SKU Finder</a></li>
+                    <li onclick="navToUPC()"><a href="#">UPC Upload</a></li>
                 </ul>
         </div>
     </nav>
 
     <div class="contcontainer">
         <div class="home-main">
-            <div class="portal">
-                <a href="#"><img src="images/upcupload.webp"></a>
+            <div class="portal" onclick="navToUPC()">
+                <a href="#"><img src="images/upcupload.webp">
                 <a href="#"><h2>UPC Upload</h2></a>
             </div>
-            <div class="portal">
+            <div class="portal" onclick="navToPricing()">
                 <a href="#"><img src="images/pprice.webp"></a>
                 <a href="#"><h2>Pricing Upload</h2></a>
             </div>
-            <div class="portal">
+            <div class="portal" onclick="">
                 <a href="#"><img src="images/vcatalog.webp"></a>
                 <a href="#"><h2>Vendor Catalog</h2></a>
             </div>            
-            <div class="portal">
-                <a href="#"><img src="images/pupload.webp"></a>
-                <a href="#"><h2>Product Entry</h2></a>
-            </div>
-            <div class="portal">
+            <div class="portal" onclick="navToGenerate()">
                 <a href="#"><img src="images/skucreation2.webp"></a>
                 <a href="#"><h2>SKU Creation</h2></a>
             </div>
-            <div class="portal">
+            <div class="portal" onclick="navToFinder()">
                 <a href="#"><img src="images/skulookup.webp"></a>
                 <a href="#"><h2>SKU Lookup</h2></a>
+            </div>
+            <div class="portal">
+                <a href="#"><img src="images/pupload.webp"></a>
+                <a href="#"><h2>Go To D365</h2></a>
             </div>
         </div>
     </div>

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="navigation.js"></script>
 </head>
 <body>
         <nav>
@@ -13,11 +14,11 @@
                 <a href="#"><img src="images/Logo.png"></a>
                     <h1>Product Processing System</h1>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">SKU Generator</a></li>
-                        <li><a href="#">SKU Finder</a></li>
-                        <li><a href="#">UPC Upload</a></li>
+                        <li onclick="navToHome()"><a href="#">Home</a></li>
+                        <li onclick="navToPricing()"><a href="#">Pricing</a></li>
+                        <li onclick="navToGenerate()"><a href="#">SKU Generator</a></li>
+                        <li onclick="navToFinder()"><a href="#">SKU Finder</a></li>
+                        <li onclick="navToUPC()"><a href="#">UPC Upload</a></li>
                     </ul>
             </div>
         </nav>

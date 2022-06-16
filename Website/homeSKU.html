@@ -13,21 +13,21 @@
                 <a href="#"><img src="images/Logo.png"></a>
                     <h1>Product Processing System</h1>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">SKU Generator</a></li>
-                        <li><a href="#">SKU Finder</a></li>
-                        <li><a href="#">UPC Upload</a></li>
+                        <li onclick="navToHome()"><a href="#">Home</a></li>
+                        <li onclick="navToPricing()"><a href="#">Pricing</a></li>
+                        <li onclick="navToGenerate()"><a href="#">SKU Generator</a></li>
+                        <li onclick="navToFinder()"><a href="#">SKU Finder</a></li>
+                        <li onclick="navToUPC()"><a href="#">UPC Upload</a></li>
                     </ul>
             </div>
         </nav>
         <div class="contcontainer">
             <div class="home-main">
-                <div class="portal">
+                <div class="portal" onclick="navToManual()">
                     <a href="#"><img src="images/upcupload.webp"></a>
                     <a href="#"><h2>Manual SKU Entry</h2></a>
                 </div>
-                <div class="portal">
+                <div class="portal" onclick="navToMassSKU()">
                     <a href="#"><img src="images/pprice.webp"></a>
                     <a href="#"><h2>Mass SKU Upload</h2></a>
                 </div>
