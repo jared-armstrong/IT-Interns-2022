@@ -55,3 +55,37 @@ CREATE TABLE
 [ ; ]
 */
 }
+
+
+
+
+
+
+
+CREATE TABLE ProductChange{
+
+    /* Identification */
+    itemNumber nvarchar(25) PRIMARY KEY NOT NULL,
+    productName nvarchar(25),
+    searchName nvarchar(25),
+    imagesSentDateTime nvarchar(25),
+
+    /* Design Information */
+    subtype nvarchar(25),
+    dimesionGroups nvarchar(25),
+    lifeCycleState nvarchar(8),
+    
+
+}
+CREATE TABLE PriceChange{
+
+    priceType nvarchar(10) NOT NULL,
+    itemNumber nvarchar(10) PRIMARY KEY NOT NULL,
+    productName nvarchar(30),
+    size nvarchar(10),
+    priceGroup nvarchar(8)
+    currencyCost float(10, 2) NOT NULL,
+    EffectiveDate date NOT NULL,
+    
+
+}
