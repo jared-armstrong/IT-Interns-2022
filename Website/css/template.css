@@ -1,0 +1,118 @@
+/* Houses all color variables for page color palette */
+:root {
+    --LidsBlue: #001E4E;
+    --LidsGrey: #D9D9D9;
+    --LidsWhite: white;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background-color: var(--LidsBlue);
+}
+
+/* Nav stylings */
+nav {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.navgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 50%;
+    max-width: 600px;
+    padding-bottom: 16px;
+}
+
+a {
+    position: relative;
+    text-decoration: none;
+}
+nav a:link, nav a:visited, nav a:active, nav a:hover {
+    color: var(--LidsWhite);
+}
+nav ul {
+    transition: 300ms ease-in-out;
+}
+/* Refers only to navigation links and not LIDS image to underline on hover */
+nav ul a:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    border: 1px solid var(--LidsWhite);
+    transition: 300MS ease-in-out;
+}
+/* NEEDS TO CENTER VERTICALLY STILL */
+nav img {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    grid-column: 1;
+}
+.itemcontainer {
+    display: block;
+}
+nav h1 {
+    text-align: left;
+    font-size: 1.25em;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: left;
+}
+nav li {
+    padding-right: 20px;
+}
+
+
+nav, #footer {
+    color: var(--LidsWhite);
+    width: auto;
+    padding: 10px 10px 0px 10px;
+    user-select: none;
+}
+
+
+
+
+/* Sticky footer code */
+body {
+    min-height: 100vh;
+}
+#footer {
+    position: sticky;
+    display: flex;
+    top: 100%;
+    height: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+/* Fixes display flex issue at small viewports.. 
+When height decreased, flex items need to change to 
+block or items will overflow upwards and not be visible */
+@media screen and (max-height: 350px) {
+    .contcontainer {
+        display: block;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contcontainer {
+        height: auto;
+    }
+    .navgrid {
+        width: auto;
+    }
+}

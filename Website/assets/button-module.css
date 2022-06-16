@@ -1,0 +1,22 @@
+/* Houses all color variables for page color palette */
+:root {
+    --LidsBlue: #001E4E;
+    --LidsGrey: #D9D9D9;
+    --LidsWhite: white;
+}
+
+.button-module [type=button]{
+    width: 80px;
+    background-color: var(--LidsBlue);
+    color: var(--LidsWhite);
+    
+
+}
+
+.button-module:hover {
+
+}
+
+.button-module:active {
+
+}
