@@ -18,8 +18,6 @@ function navToUPC() {
     window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/upcUpload.html";
 }
 
-//function navToVendor()
-
 function navToManual() {
     window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/singleSKU.html";
 }
@@ -29,9 +27,9 @@ function navToMassSKU() {
 }
 
 function navToSinglePrice() {
-
+    window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/singlePrice.html";
 }
 
 function navToMassPrice() {
-    
+    window.location.href = "C:/Users/armstrongja/OneDrive%20-%20Hat%20World%2C%20Inc/Documents/GitHub/IT-Interns-2022/Website/massPrice.html";
 }
