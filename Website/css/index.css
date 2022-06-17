@@ -94,14 +94,6 @@ nav, #footer {
     margin-left: auto;
     margin-right: auto;
 }
-
-.displayNormal {
-    display: block;
-    
-    background-color: var(--LidsGrey);
-    margin-left: auto;
-    margin-right: auto;
-}
 .home-main {
     width: 80%;
     max-width: 1280px;
