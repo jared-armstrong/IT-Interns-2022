@@ -125,9 +125,9 @@ nav, #footer {
 	   -moz-box-shadow: 0 8px 6px -6px black;
 	        box-shadow: 0 8px 6px -6px black;
 }
-.portal:active {
+.portal:hover {
     transition: 0ms;
-    transform: translateY(5px);
+    transform: translateY(-5px);
 }
 .portal a {
     padding-left: 10px;
