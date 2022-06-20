@@ -44,17 +44,14 @@ nav a:link, nav a:visited, nav a:active, nav a:hover {
 }
 nav ul {
     grid-column: 3;
-    transition: 300ms ease-in-out;
+}
+nav ul a {
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 300ms;
 }
 /* Refers only to navigation links and not LIDS image to underline on hover */
-nav ul a:hover::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -5px;
-    border: 1px solid var(--LidsWhite);
-    transition: 300MS ease-in-out;
+nav ul a:hover {
+    border-bottom-color: 1px solid var(--LidsWhite);
 }
 /* NEEDS TO CENTER VERTICALLY STILL */
 nav img {
