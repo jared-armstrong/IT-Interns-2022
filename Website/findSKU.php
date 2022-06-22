@@ -42,7 +42,7 @@ if($conn == false){
 /* User login ??????? */
 $var_SKU = $_POST['form-findSKU'];
 $tsql2 = "SELECT * FROM Product AS p WHERE p.SKUID = '$var_SKU' ";
-$resultFindSKU =($conn, $sql2);
+/*$resultFindSKU =($conn, $tsql2); */
 
 if (sqlsrv_query($conn, $tsql2)) {  
     echo "Statement executed.\n";  
