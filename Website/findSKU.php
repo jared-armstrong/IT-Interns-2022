@@ -22,5 +22,46 @@
                     </ul>
             </div>
         </nav>
+
+
+<input type="text" placeholder="Find SKU..." form name = "findSKU">
+
+
+  
+<?php
+$serverName = "192.xx.x.x.";
+$connectionInfo = array("Database" => "POC", );
+$conn = sqlsrv_connect($serverName, $connectionInfo);
+
+
+if($conn == false){
+  echo " Unable to connect to Database. </br>";
+  die(print_r(sqlsrv_errors(), true));
+}
+
+/* User login ??????? */
+$var_SKU = $_POST['form-findSKU'];
+$tsql2 = "SELECT * FROM Product AS p WHERE p.SKUID = '$var_SKU' ";
+/*$resultFindSKU =($conn, $tsql2); */
+
+if (sqlsrv_query($conn, $tsql2)) {  
+    echo "Statement executed.\n";  
+} else {  
+    echo "Error in statement execution.\n";  
+    die(print_r(sqlsrv_errors(), true));  
+}  
+
+
+mysqli_close($con);
+?>
+
+
+
+  
+  <footer id="footer">
+        <p>© Lids Inc. 2022. All Rights Reserved.</p> 
+  </footer>
+
+  
 </body>
 </html>

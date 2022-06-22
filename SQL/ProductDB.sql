@@ -1,16 +1,14 @@
 CREATE TABLE Product{
-
-
-
-
-
-
-
-
-
+      /*
+-- Simple CREATE TABLE Syntax (common if not using options)
+CREATE TABLE
+    { ?????.schema_name.Product | schema_name.Product | Product }
+    ( { <column_definition> } [ ,...n ] )
+[ ; ]
+*/
 
     /* Identification */
-    SKUID nvarchar(25) PRIMARY KEY NOT NULL,
+    SKUID int() PRIMARY KEY NOT NULL AUTO_INCREMENT,
     Desc nvarchar(25),
     department nvarchar(25),
     VendorSKU nvarchar(25),
@@ -23,6 +21,28 @@ CREATE TABLE Product{
     logoApp nvarchar(25),
     logoPlace nvarchar(25),
     playerName nvarchar(25),
+    material1 nvarchar(25),
+    material_1_percent int(),
+    material2 nvarchar(25),
+    material_2_percent int(),
+    material3 nvarchar(25),
+    material_3_percent int(),
+  
+
+  /*Pricing*/
+    TaxGroup nchar(50),
+    PZ1 decimal (10.2),
+    PZ2 decimal (10.2),
+    PZ1 decimal (10.2),
+    PZ1 decimal (10.2),
+    PZ1 decimal (10.2),
+    PZ1 decimal (10.2),
+    PZ1 decimal (10.2),
+    PZ1 decimal (10.2),
+    PZ1 decimal (10.2),
+    PZ1 decimal (10.2),
+    PZ1 decimal (10.2),
+  
 
 
     /* Source Info*/
@@ -47,45 +67,30 @@ CREATE TABLE Product{
     JDA-subDep nvarchar(15),
     JDA-class nvarchar(15),
     JDA-subClass nvarchar(15),
-    /*
--- Simple CREATE TABLE Syntax (common if not using options)
-CREATE TABLE
-    { ?????.schema_name.Product | schema_name.Product | Product }
-    ( { <column_definition> } [ ,...n ] )
-[ ; ]
-*/
-}
-
-
-
-
-
-
-
-CREATE TABLE ProductChange{
-
-    /* Identification */
-    itemNumber nvarchar(25) PRIMARY KEY NOT NULL,
-    productName nvarchar(25),
-    searchName nvarchar(25),
-    imagesSentDateTime nvarchar(25),
-
-    /* Design Information */
-    subtype nvarchar(25),
-    dimesionGroups nvarchar(25),
-    lifeCycleState nvarchar(8),
-    
 
 }
-CREATE TABLE PriceChange{
 
-    priceType nvarchar(10) NOT NULL,
-    itemNumber nvarchar(10) PRIMARY KEY NOT NULL,
-    productName nvarchar(30),
-    size nvarchar(10),
-    priceGroup nvarchar(8)
-    currencyCost float(10, 2) NOT NULL,
-    EffectiveDate date NOT NULL,
-    
+CREATE TABLE Pricing{
+  SKUID int() PRIMARY KEY NOT NULL,
+  Retail/Markdown nchar(8),
+  Effectivedate date(),
+  PZ1 decimal(10.2),
+  PZ2 decimal(10.2),
+  PZ3 decimal(10.2),
+  PZ4 decimal(10.2),
+  PZ5 decimal(10.2),
+  PZ6 decimal(10.2),
+  PZ40 decimal(10.2),
+  PZ41 decimal(10.2),
+  PZ42 decimal(10.2),
+  PZ43 decimal(10.2),
+  PZ44 decimal(10.2),
+}
 
+CREATE TABLE UPCUpload{
+  UPC int() PRIMARY KEY NOT NULL,
+  SKU int() FOREIGN KEY,
+  Size nwarchar(5),
+  VendorSku int(),
+  vendor nvarchar(4),
 }
