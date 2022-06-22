@@ -11,7 +11,7 @@
 <body>
         <nav>
             <div class="navgrid">
-                <a href="#"><img onclick="navToHome()" src="images/Logo.png"></a>
+                <a href="#"><img onclick="navToHome()" src="images/Logo.png" alt=""></a>
                 <h1>Product Processing System</h1>
                     <ul>
                         <li onclick="navToHome()"><a href="#">Home</a></li>
@@ -24,11 +24,12 @@
         </nav>
 
 
-<input type="text" placeholder="Find SKU..." form name = "findSKU">
+        <label>
+            <input type="text" placeholder="Find SKU..." form name = "findSKU">
+        </label>
 
 
-  
-<?php
+        <?php
 $serverName = "192.xx.x.x.";
 $connectionInfo = array("Database" => "POC", );
 $conn = sqlsrv_connect($serverName, $connectionInfo);
