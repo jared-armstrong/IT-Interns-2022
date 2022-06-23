@@ -4,7 +4,7 @@ const remove_fields = document.getElementById('remove_fields');
 
 add_more_fields.onclick = function(){
   const newField = document.createElement('input');
-  newField.setAttribute('type','text');
+  newField.setAttribute('type','number');
   newField.setAttribute('name','survey_options[]');
   newField.setAttribute('class','survey_options');
   newField.setAttribute('size',50);
