@@ -1,4 +1,10 @@
 /* HAMBURGER MENU CSS FILE */
+:root {
+    --LidsBlue: #001E4E;
+    --LidsGrey: #D9D9D9;
+    --LidsWhite: white;
+}
+
 #menu__toggle {
     opacity: 0;
   }
@@ -42,7 +48,7 @@
     width: 100%;
     height: 2px;
   
-    background-color: #616161;
+    background-color: var(--LidsWhite);
   
     transition-duration: .25s;
   }
@@ -70,7 +76,7 @@
   
     list-style: none;
   
-    background-color: #ECEFF1;
+    background-color: var(--LidsBlue);
     box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   
     transition-duration: .25s;
@@ -80,7 +86,7 @@
     display: block;
     padding: 12px 24px;
   
-    color: #333;
+    color: var(--LidsBlue);
   
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -91,5 +97,6 @@
     /*transition-duration: .25s;*/
   }
   .menu__item:hover {
-    background-color: #CFD8DC;
+    background-color: var(--LidsGrey);
+    color: var(--LidsBlue);
   }
