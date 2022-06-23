@@ -19,7 +19,7 @@ function navToUPC() {
 }
 
 function navToManual() {
-    window.location.href = "singleSKU.html";
+    window.location.href = "manualSKU.html";
 }
 
 function navToMassSKU() {
@@ -27,7 +27,7 @@ function navToMassSKU() {
 }
 
 function navToSinglePrice() {
-    window.location.href = "singlePrice.html";
+    window.location.href = "editPrice.html";
 }
 
 function navToMassPrice() {
