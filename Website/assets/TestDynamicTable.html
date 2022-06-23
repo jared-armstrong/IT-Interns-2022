@@ -10,7 +10,7 @@
 <body>
     <nav>
         <div class="navgrid">
-            <a href="#"><img onclick="navToHome()" src="../images/Logo.png"></a>
+            <a href="#"><img onclick="navToHome()" src="../images/Logo.png" alt=""></a>
                 <h1>Product Processing System</h1>
                 <ul>
                     <li onclick="navToHome()"><a href="#">Home</a></li>
@@ -26,8 +26,8 @@
     <div class="container">
       <div class="newShit">
         <form class="search-container">
-            <input type="text" id="search-bar" placeholder="What can I help you with today?">
-            <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+            <label for="search-bar"></label><input type="text" id="search-bar" placeholder="What can I help you with today?">
+            <a href="#"><img class="search-icon" src="https://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png" alt=""></a>
           </form>
         <div class="moreshit">
             <div class="wrapper">
@@ -37,20 +37,32 @@
                         <a href="#" id="add_more_fields"><i class="fa fa-plus"></i>Add More</a>
                         <a href="#" id="remove_fields"><i class="fa fa-plus"></i>Remove Field</a>
                       </div>
-                    <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Name">
-                    <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Email">
-                    <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
-                  </div>
+                    <label>
+                        <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Name">
+                    </label>
+                    <label>
+                        <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Email">
+                    </label>
+                    <label>
+                        <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
+                    </label>
+                </div>
             </div>
             <div class="wrapper">
-                <div id="survey_options">
+                <div class="survey_options">
                     <div class="controls">
                         <h2>Current Data</h2>
                       </div>
-                    <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Name">
-                    <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Email">
-                    <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
-                  </div>
+                    <label>
+                        <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Name">
+                    </label>
+                    <label>
+                        <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Email">
+                    </label>
+                    <label>
+                        <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
+                    </label>
+                </div>
             </div>
 
         </div>

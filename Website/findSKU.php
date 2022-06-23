@@ -24,7 +24,9 @@
         </nav>
 
 
-<input type="text" placeholder="Find SKU..." form name = "findSKU">
+        <div class="container">
+            <input type="text" placeholder="Find SKU..." form name = "findSKU">
+        </div>
 
 
   
@@ -52,7 +54,7 @@ if (sqlsrv_query($conn, $tsql2)) {
 }  
 
 
-mysqli_close($con);
+mysqli_close($conn);
 ?>
 
 
