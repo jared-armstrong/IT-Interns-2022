@@ -178,17 +178,20 @@ body {
 /* Fixes display flex issue at small viewports.. 
 When height decreased, flex items need to change to 
 block or items will overflow upwards and not be visible */
-@media screen and (max-height: 350px) {
+@media screen and (max-height: 400px) {
     .container {
-        display: block;
+        align-items: normal;
         height: auto;
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and  (max-height: 800px) and (max-width: 800px){
     .container {
-        height: auto;
+        align-items: normal;
     }
+}
+
+@media screen and (max-width: 768px) {
     .navgrid {
         width: auto;
     }
