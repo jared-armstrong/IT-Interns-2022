@@ -33,3 +33,7 @@ function navToSinglePrice() {
 function navToMassPrice() {
     window.location.href = "massPrice.html";
 }
+
+function navToD365() {
+    window.open("https://lidsd365test.sandbox.operations.dynamics.com/");
+}
