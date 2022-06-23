@@ -25,62 +25,61 @@
     </nav>
 
     <div class="container">
-        <form class="search-container">
-            <label for="search-bar"></label><input type="text" id="search-bar" placeholder="What can I help you with today?">
-            <img class="search-icon" src="images/search.webp" alt="">
-        </form>
-        <div class="wrapperGrid">
-            <div class="wrapper">
-                <div class="survey_options">
-                    <div class="controls">
-                        <h2>Current Data</h2>
-                    </div>
-                    <div class="topContainer">
-                        <div class="centerText">
-                            <label>Type</label>
-                            <p>Markdown</p>
+        <div>
+            <form class="search-container">
+                <label for="search-bar"></label><input type="text" id="search-bar" placeholder="What can I help you with today?">
+                <img class="search-icon" src="images/search.webp" alt="">
+            </form>
+            <div class="wrapperGrid">
+                <div class="wrapper">
+                    <div class="survey_options">
+                        <div class="controls">
+                            <h2>Current Data</h2>
                         </div>
-                        <div class="centerText">
-                            <label>Effective Date</label>
-                            <p>12/20/2022</p>
+                        <div class="topContainer">
+                            <div class="centerText">
+                                <label>Type</label>
+                                <p>Markdown</p>
+                            </div>
+                            <div class="centerText">
+                                <label>Effective Date</label>
+                                <p>12/20/2022</p>
+                            </div>
                         </div>
+                        <label>
+                            <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
+                        </label>
                     </div>
-                    <label>
-                        <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
-                    </label>
                 </div>
-            </div>
-            <div class="wrapper">
-                <div id="survey_options">
-                    <div class="controls">
-                        <h2>New Data</h2>
-                        <div class="controlButtons">
-                            <a href="#" id="add_more_fields"><i class="fa fa-plus"></i><img src="images/plus.webp" alt="Plus Sign"></a>
-                            <a href="#" id="remove_fields"><i class="fa fa-plus"></i><img src="images/minus.webp" alt="Minus Sign"></a>
+                <div class="wrapper">
+                    <div id="survey_options">
+                        <div class="controls">
+                            <h2>New Data</h2>
+                            <div class="controlButtons">
+                                <a href="#" id="add_more_fields"><i class="fa fa-plus"></i><img src="images/plus.webp" alt="Plus Sign"></a>
+                                <a href="#" id="remove_fields"><i class="fa fa-plus"></i><img src="images/minus.webp" alt="Minus Sign"></a>
+                            </div>
                         </div>
+                        <div class="topContainer">
+                            <div class="centerText">
+                                <label for="changeType">Type</label>
+                                <select name="survey_options[]" class="survey_options" id="changeType">
+                                    <option value="Markdown">Markdown</option>
+                                    <option value="Retail">Retail</option>
+                                </select>
+                            </div>
+                            <div class="centerText">
+                                <label for="setDate">Effective Date</label>
+                                <input type="date" name="survey_options[]" class="survey_options" onfocus="(this.type='date')" id="setDate">
+                            </div>
+                        </div>
+                        <label>
+                            <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
+                        </label>
                     </div>
-                    <div class="topContainer">
-                        <div class="centerText">
-                            <label for="changeType">Type</label>
-                            <select name="survey_options[]" class="survey_options" id="changeType">
-                                <option value="Markdown">Markdown</option>
-                                <option value="Retail">Retail</option>
-                            </select>
-                        </div>
-                        <div class="centerText">
-                            <label for="setDate">Effective Date</label>
-                            <input type="date" name="survey_options[]" class="survey_options" onfocus="(this.type='date')" id="setDate">
-                        </div>
-                    </div>
-                    <label>
-                        <input type="text" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
-                    </label>
                 </div>
             </div>
         </div>
-
-
-
     </div>
 
 
