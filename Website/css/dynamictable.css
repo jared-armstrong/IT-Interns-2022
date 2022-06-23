@@ -1,4 +1,4 @@
-.moreshit {
+.wrapperGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: auto;
@@ -36,8 +36,16 @@ input[type="text"]{
   }
   
   .controls {
-    width: 294px;
-    margin: 15px auto;
+      display: grid;
+      grid-template-columns: 1fr .5fr;
+      margin: 15px auto;
+      width: 100%;
+      border-bottom: 3px solid var(--LidsBlue);
+      border-radius: 3px;
+  }
+  .controlButtons {
+      display: flex;
+      justify-content: end;
   }
   
   #remove_fields {
@@ -47,13 +55,18 @@ input[type="text"]{
     margin-right: 5px;
   }
   
-  .controls a {
-    color: black;
-    text-decoration: none;
+  .controlButtons a {
+      color: black;
+      text-decoration: none;
+  }
+  .controlButtons img {
+      width: 32px;
+      height: 32px;
+      padding-right: 16px;
   }
   .controls h2 {
     display: inline;
-    font-size: 16px;
+    font-size: 32px;
     padding: 0;
     margin: 0;
   }
@@ -65,187 +78,6 @@ input[type="text"]{
     --LidsGrey: #D9D9D9;
     --LidsWhite: white;
 }
-
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    width: auto;
-    background-color: var(--LidsBlue);
-}
-
-/* Nav stylings */
-nav {
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-nav img {
-    padding-top: 15px;
-}
-
-.navgrid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    padding-bottom: 16px;
-}
-
-.navgrid h1 {
-    font-size: 32px;
-}
-
-a {
-    position: relative;
-    text-decoration: none;
-}
-nav a:link, nav a:visited, nav a:active, nav a:hover {
-    color: var(--LidsWhite);
-}
-nav ul {
-    grid-column: 3;
-}
-nav ul a {
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 300ms;
-}
-/* Refers only to navigation links and not LIDS image to underline on hover */
-nav ul a:hover {
-    border-bottom-color: 1px solid var(--LidsWhite);
-}
-/* NEEDS TO CENTER VERTICALLY STILL */
-nav img {
-    display: flex;
-    align-items: center;
-    width: 200px;
-    grid-column: 1;
-}
-
-nav h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.25em;
-    grid-column: 2;
-}
-nav ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: right;
-}
-nav li {
-    padding-right: 20px;
-}
-
-
-nav, #footer {
-    color: var(--LidsWhite);
-    width: auto;
-    padding: 10px 10px 0 10px;
-    user-select: none;
-}
-
-/* Main content stylings */
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: calc(100vh - 160px);
-    
-    background-color: var(--LidsGrey);
-    margin-left: auto;
-    margin-right: auto;
-}
-.home-main {
-    width: 80%;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%/1, max(300px, 100%/3)), 1fr));
-}
-
-/* Styling for portal boxes */
-.portal {
-    background-color: var(--LidsBlue);
-    width: 280px;
-    height: 80px;
-    text-align: center;
-    color: var(--LidsWhite);
-    border-radius: 5px;
-    margin: 15px auto;
-    display: grid;
-    grid-template-columns: .25fr 1fr;
-    user-select: none;
-
-    transition: 300ms ease-in-out;
-    -webkit-box-shadow: 0 8px 6px -6px black;
-	   -moz-box-shadow: 0 8px 6px -6px black;
-	        box-shadow: 0 8px 6px -6px black;
-}
-.portal:hover {
-    transition: 0ms;
-    transform: translateY(-5px);
-}
-.portal a {
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-}
-.portal img {
-    height: 60px;
-}
-.portal a:link, .portal a:visited, .portal a:active, .portal a:hover {
-    color: var(--LidsWhite);
-}
-.portal:hover {
-    opacity: .75;
-}
-
-
-/* Sticky footer code */
-body {
-    min-height: 100vh;
-}
-#footer {
-    position: sticky;
-    display: flex;
-    top: 100%;
-    height: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    padding-bottom: 15px;
-}
-
-
-/* Fixes display flex issue at small viewports.. 
-When height decreased, flex items need to change to 
-block or items will overflow upwards and not be visible */
-@media screen and (max-height: 350px) {
-    .container {
-        display: block;
-        height: auto;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .container {
-        height: auto;
-    }
-    .navgrid {
-        width: auto;
-    }
-}
-
-body{
-    padding-top: 75px;
-  }
   
   .search-container{
     width: 490px;
@@ -279,8 +111,58 @@ body{
   .search-icon{
     position: relative;
     float: right;
-    width: 75px;
-    height: 75px;
-    top: -62px;
-    right: -45px;
+    width: 32px;
+    height: 32px;
+    top: -40px;
+    right: -30px;
   }
+  .search-icon:hover {
+      cursor: pointer;
+  }
+
+
+
+
+
+button[type="submit"] {
+    text-indent: -999px;
+    overflow: hidden;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E") no-repeat center;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button[type="submit"]:hover {
+    opacity: 1;
+}
+
+button[type="submit"]:focus,
+input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: #1183d6;
+    outline: none;
+}
+
+.topContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+.topContainer input, .topContainer p, .topContainer select {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 125px;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+}
+.centerText {
+    text-align: center;
+}
