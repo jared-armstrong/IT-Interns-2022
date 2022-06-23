@@ -9,7 +9,7 @@ CREATE TABLE
 
     /* Identification */
     SKUID int() PRIMARY KEY NOT NULL AUTO_INCREMENT,
-    Desc nvarchar(25),
+    Prod_Desc nvarchar(25),
     department nvarchar(25),
     VendorSKU nvarchar(25),
 
@@ -33,15 +33,15 @@ CREATE TABLE
     TaxGroup nchar(50),
     PZ1 decimal (10.2),
     PZ2 decimal (10.2),
-    PZ1 decimal (10.2),
-    PZ1 decimal (10.2),
-    PZ1 decimal (10.2),
-    PZ1 decimal (10.2),
-    PZ1 decimal (10.2),
-    PZ1 decimal (10.2),
-    PZ1 decimal (10.2),
-    PZ1 decimal (10.2),
-    PZ1 decimal (10.2),
+    PZ3 decimal (10.2),
+    PZ4 decimal (10.2),
+    PZ5 decimal (10.2),
+    PZ6 decimal (10.2),
+    PZ40 decimal (10.2),
+    PZ41 decimal (10.2),
+    PZ42 decimal (10.2),
+    PZ43 decimal (10.2),
+    PZ44 decimal (10.2),
   
 
 
@@ -72,7 +72,7 @@ CREATE TABLE
 
 CREATE TABLE Pricing{
   SKUID int() PRIMARY KEY NOT NULL,
-  Retail/Markdown nchar(8),
+  Retail_Markdown nchar(8),
   Effectivedate date(),
   PZ1 decimal(10.2),
   PZ2 decimal(10.2),
@@ -87,10 +87,10 @@ CREATE TABLE Pricing{
   PZ44 decimal(10.2),
 }
 
-CREATE TABLE UPCUpload{
+CREATE TABLE UPC_Upload{
   UPC int() PRIMARY KEY NOT NULL,
   SKU int() FOREIGN KEY,
-  Size nwarchar(5),
+  Size nvarchar(5),
   VendorSku int(),
   vendor nvarchar(4),
 }
