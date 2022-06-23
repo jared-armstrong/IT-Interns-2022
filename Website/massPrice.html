@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mass Price Upload</title>
-    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/formStyles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
     <script src="navigation.js"></script>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
         <nav>
@@ -24,19 +26,16 @@
             </div>
         </nav>
         <div class="container">
-            <div class="Block1">
-                <form>
-                    <div class="formelement">
-                        <!--<label for="fileUpload">File Upload:</label>!-->
-                        <input id="fileSelect" type="file" placeholder="boring_pricing_sheet.xls" accept=".csv, xlsx, xls" /> 
-                        <button class="uploadBtn">Confirm Upload</button>
-                    </div>
-                </form>
+
+            <div id="excel_data" class="mt-5">
+                <input type="file" id="excel_file" />
             </div>
+        
         </div>
 
   <footer id="footer">
         <p>© Lids Inc. 2022. All Rights Reserved.</p> 
   </footer>
 </body>
+<script src="excel.js"></script>
 </html>
