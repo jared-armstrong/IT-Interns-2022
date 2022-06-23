@@ -24,7 +24,7 @@
         </nav>
 
 
-        <div class="container">
+        <div class="containerNonHome">
             <input type="text" placeholder="Find SKU..." form name = "findSKU">
         </div>
 

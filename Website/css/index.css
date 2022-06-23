@@ -100,6 +100,18 @@ nav, #footer {
     margin-left: auto;
     margin-right: auto;
 }
+.containerNonHome {
+    display: flex;
+    align-items: normal;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 160px);
+
+    background-color: var(--LidsGrey);
+    padding-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+}
 .home-main {
     width: 80%;
     max-width: 1280px;
