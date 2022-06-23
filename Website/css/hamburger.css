@@ -66,18 +66,18 @@
     position: fixed;
     visibility: hidden;
     top: 0;
-    right: 0%;
+    right: 0;
   
     width: 300px;
     height: 100%;
   
     margin: 0;
-    padding: 135px 0;
+    padding: 110px 0;
   
     list-style: none;
   
     background-color: var(--LidsBlue);
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    box-shadow: 1px 0 6px rgba(0, 0, 0, .2);
   
     transition-duration: .25s;
   }
@@ -107,6 +107,7 @@ nav {
   position: relative;
   top: 0;
   left: 0;
+  height: 100px;
 }
 
 nav img {
