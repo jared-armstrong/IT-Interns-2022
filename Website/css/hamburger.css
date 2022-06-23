@@ -100,3 +100,54 @@
     background-color: var(--LidsGrey);
     color: var(--LidsBlue);
   }
+
+
+/* Nav stylings */
+nav {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+nav img {
+  padding-top: 15px;
+}
+
+.navgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.navgrid h1 {
+  font-size: 32px;
+}
+nav a:link, nav a:visited, nav a:active, nav a:hover {
+  color: var(--LidsWhite);
+}
+
+/* NEEDS TO CENTER VERTICALLY STILL */
+nav img {
+  display: flex;
+  align-items: center;
+  width: 200px;
+  grid-column: 1;
+}
+
+nav h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25em;
+  grid-column: 2;
+}
+
+
+
+nav, #footer {
+  color: var(--LidsWhite);
+  width: auto;
+  padding: 10px 10px 0 10px;
+  user-select: none;
+}
