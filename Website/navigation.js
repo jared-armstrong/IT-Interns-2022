@@ -3,7 +3,7 @@ function navToHome() {
 }
 
 function navToPricing() {
-    window.location.href = "pricingHome.html";
+    window.location.href = "homePrice.html";
 }
 
 function navToGenerate() {

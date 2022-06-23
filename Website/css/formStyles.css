@@ -28,3 +28,7 @@
     grid-row-end: 10;
     grid-column: 1;
 }
+
+.uploadBtn {
+    width: auto;
+}
