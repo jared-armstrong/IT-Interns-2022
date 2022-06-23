@@ -1,8 +1,3 @@
-.container {
-    align-items: normal;
-    padding-top: 50px;
-}
-
 .wrapperGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
