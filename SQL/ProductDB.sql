@@ -7,6 +7,7 @@ CREATE TABLE
 [ ; ]
 */
 
+  /* Saving Statements */
     /* Identification */
     SKUID int() PRIMARY KEY NOT NULL AUTO_INCREMENT,
     Prod_Desc nvarchar(25),
@@ -27,10 +28,9 @@ CREATE TABLE
     material_2_percent int(),
     material3 nvarchar(25),
     material_3_percent int(),
-  
 
   /*Pricing*/
-    TaxGroup nchar(50),
+    taxGroup nchar(50),
     PZ1 decimal (10.2),
     PZ2 decimal (10.2),
     PZ3 decimal (10.2),
@@ -42,8 +42,6 @@ CREATE TABLE
     PZ42 decimal (10.2),
     PZ43 decimal (10.2),
     PZ44 decimal (10.2),
-  
-
 
     /* Source Info*/
     packaging nvarchar(25),
@@ -56,35 +54,15 @@ CREATE TABLE
     keyword1 nchar(5) NOT NULL,
     keyword2 nchar(4) NOT NULL,
 
-
     /* JDA ID TREE */
 
+    domain nvarchar(25),
+    subDiv nvarchar(10),
+    Dep nvarchar(15),
+    subDep nvarchar(15),
+    class nvarchar(15),
+    subClass nvarchar(15),
 
-
-    JDA-domain nvarchar(25),
-    JDA-subDiv nvarchar(10),
-    JDA-Dep nvarchar(15),
-    JDA-subDep nvarchar(15),
-    JDA-class nvarchar(15),
-    JDA-subClass nvarchar(15),
-
-}
-
-CREATE TABLE Pricing{
-  SKUID int() PRIMARY KEY NOT NULL,
-  Retail_Markdown nchar(8),
-  Effectivedate date(),
-  PZ1 decimal(10.2),
-  PZ2 decimal(10.2),
-  PZ3 decimal(10.2),
-  PZ4 decimal(10.2),
-  PZ5 decimal(10.2),
-  PZ6 decimal(10.2),
-  PZ40 decimal(10.2),
-  PZ41 decimal(10.2),
-  PZ42 decimal(10.2),
-  PZ43 decimal(10.2),
-  PZ44 decimal(10.2),
 }
 
 CREATE TABLE UPC_Upload{
