@@ -31,8 +31,8 @@
 
   
 <?php
-$serverName = " ";
-$connectionInfo = array("Database" => "POC", );
+$serverName = "ssdevd365salesautomation.database.windows.net";
+$connectionInfo = array("Database" => "POC.Product", );
 $conn = sqlsrv_connect($serverName, $connectionInfo);
 
 
