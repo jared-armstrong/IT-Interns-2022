@@ -12,7 +12,8 @@
         <nav>
             <div class="navgrid">
                 <a href="#"><img onclick="navToHome()" src="images/Logo.png"></a>
-                <h1>Product Processing System</h1>
+                <h2 id="one">Product Processing System</h2>
+                <h2 id="two">PPS</h2>
                     <ul>
                         <li onclick="navToHome()"><a href="#">Home</a></li>
                         <li onclick="navToPricing()"><a href="#">Pricing</a></li>
