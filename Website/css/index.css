@@ -120,12 +120,7 @@ block or items will overflow upwards and not be visible */
 
 @media screen and  (max-height: 800px) and (max-width: 800px){
     .container {
-        align-items: normal;
-    }
-}
-
-@media screen and (max-height: 820px) {
-    .container {
         height: 100%;
     }
 }
+
