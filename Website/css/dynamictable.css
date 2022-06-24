@@ -195,3 +195,30 @@ input[type="search"]:focus {
 .centerText {
     text-align: center;
 }
+
+@media screen and (max-width: 768px) {
+    .wrapperGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: auto;
+    }
+    #search-bar {
+        width: 400px;
+    }
+    .search-icon{
+        position: relative;
+        float: right;
+        width: 32px;
+        height: 32px;
+        top: -40px;
+        right: 44px;
+    }
+    .containerNonHome {
+        height: 100%;
+    }
+}
+@media screen and (max-height: 768px) {
+    .containerNonHome {
+        height: 100%;
+    }
+}
