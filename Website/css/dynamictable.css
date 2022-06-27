@@ -26,7 +26,7 @@
     scrollbar-gutter: stable;
   }
 
-.wrapper input:focus {
+.wrapper input:focus:not([type='date']) {
     transition: 300ms ease-in-out;
     transform: scale(1.01);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -70,7 +70,7 @@ input[type="number"]{
   .controlButtons a {
       color: black;
       text-decoration: none;
-      margin-right: 16px;
+      margin-left: 16px;
   }
   .controlButtons img {
       width: 32px;
