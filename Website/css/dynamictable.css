@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .wrapperGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -17,11 +22,11 @@
     overflow-y: auto;
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
-         box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;
     scrollbar-gutter: stable;
-  }
+}
 
-.wrapper input:focus {
+.wrapper input:focus:not([type='date']) {
     transition: 300ms ease-in-out;
     transform: scale(1.01);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -36,107 +41,107 @@ input[type="number"]{
     background: var(--LidsWhite);
     width: 274px;
     color: black;
-  }
-  
-  input[type="text"]:focus {
+}
+
+input[type="text"]:focus {
     outline: none;
-  }
-  
-  .controls {
-      display: grid;
-      grid-template-columns: 1fr .5fr;
-      margin: 15px auto;
-      width: 100%;
-      border-bottom: 3px solid var(--LidsBlue);
-      border-radius: 3px;
-  }
-  .controlButtons {
-      display: flex;
-      justify-content: end;
-  }
-  
-  #remove_fields {
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    margin: 15px auto;
+    width: 100%;
+    border-bottom: 3px solid var(--LidsBlue);
+    border-radius: 3px;
+}
+.controlButtons {
+    display: flex;
+    justify-content: end;
+}
+
+#remove_fields {
     float: right;
-  }
-  .controls a i.fa-minus {
+}
+.controls a i.fa-minus {
     margin-right: 5px;
-  }
-  
-  .controlButtons a {
-      color: black;
-      text-decoration: none;
-      margin-right: 16px;
-  }
-  .controlButtons img {
-      width: 32px;
-      height: 32px;
-  }
-  .controls h2 {
+}
+
+.controlButtons a {
+    color: black;
+    text-decoration: none;
+    margin-left: 16px;
+}
+.controlButtons img {
+    width: 32px;
+    height: 32px;
+}
+.controls h2 {
     display: inline;
     font-size: 30px;
-      margin: 0;
-      padding: 0 0 5px;
-  }
-  
+    margin: 0;
+    padding: 0 0 5px;
+}
 
-  /* Houses all color variables for page color palette */
+
+/* Houses all color variables for page color palette */
 :root {
     --LidsBlue: #001E4E;
     --LidsGrey: #D9D9D9;
     --LidsWhite: white;
 }
 
-  .search-container{
+.search-container{
     width: 490px;
     display: block;
     margin: 0 auto;
-  }
-  .search-icon:hover, .controlButtons img:hover {
-      transition: 300ms ease-in-out;
-      transform: scale(1.25);
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      border-radius: 40%;
-  }
-  img {
-      user-select: none;
-  }
+}
+.search-icon:hover, .controlButtons img:hover {
+    transition: 300ms ease-in-out;
+    transform: scale(1.25);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 40%;
+}
+img {
+    user-select: none;
+}
 .controlButtons img:hover {
     transform: scale(1.1);
 }
 
-  #search-bar{
+#search-bar{
     margin: 0 auto;
     height: 25px;
     width: 100%;
     font-size: 1rem;
     border: 1px solid #D0CFCE;
     outline: none;
-      border-radius: 15px;
-  }:focus{
-      border: 1px solid #008ABF;
-      transition: 0.35s ease;
-      color: #008ABF;
-  }::-webkit-input-placeholder{
-        transition: opacity 0.45s ease; 
-          opacity: 0;
-       }
-     ::-moz-placeholder {
-        transition: opacity 0.45s ease; 
-          opacity: 0;
-       }
-     
-    
-  
-  .search-icon{
+    border-radius: 15px;
+}:focus{
+     border: 1px solid #008ABF;
+     transition: 0.35s ease;
+     color: #008ABF;
+ }::-webkit-input-placeholder{
+      transition: opacity 0.45s ease;
+      opacity: 0;
+  }
+::-moz-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+}
+
+
+
+.search-icon{
     position: relative;
     float: right;
     width: 32px;
     height: 32px;
     top: -40px;
-  }
-  .search-icon:hover {
-      cursor: pointer;
-  }
+}
+.search-icon:hover {
+    cursor: pointer;
+}
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
@@ -192,6 +197,7 @@ input[type="search"]:focus {
     border-radius: 15px;
     font-size: 16px;
 }
+
 .centerText {
     text-align: center;
 }
