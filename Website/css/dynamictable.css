@@ -225,6 +225,6 @@ input[type="search"]:focus {
 }
 @media screen and (max-height: 768px) {
     .containerNonHome {
-        height: 100%;
+        height: auto;
     }
 }

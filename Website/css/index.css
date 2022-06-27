@@ -111,10 +111,10 @@ body {
 /* Fixes display flex issue at small viewports.. 
 When height decreased, flex items need to change to 
 block or items will overflow upwards and not be visible */
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 768px) {
     .container {
         align-items: normal;
-        height: auto;
+        height: 100%;
     }
 }
 
