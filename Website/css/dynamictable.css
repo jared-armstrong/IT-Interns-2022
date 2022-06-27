@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .wrapperGrid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -192,6 +197,7 @@ input[type="search"]:focus {
     border-radius: 15px;
     font-size: 16px;
 }
+
 .centerText {
     text-align: center;
 }
