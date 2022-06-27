@@ -11,66 +11,67 @@
     <script src="js/navigation.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="navgrid">
-            <a href="#"><img onclick="navToHome()" src="images/Logo.png" alt=""></a>
+<nav>
+    <div class="navgrid">
+        <a href="#"><img onclick="navToHome()" src="images/Logo.png" alt=""></a>
             <h2 id="one">Product Processing System</h2>
             <h2 id="two">PPS</h2>
-        </div>
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-        
-            <ul class="menu__box">
-                <li onclick="navToHome()"><a class="menu__item" href="#">Home</a></li>
-                <li onclick="navToUPC()"><a class="menu__item" href="#">UPC Upload</a></li>
-                <li onclick="navToPricing()"><a class="menu__item" href="#">Pricing Upload</a></li>
-                <li><a class="menu__item" href="#">Vendor Catalog</a></li>
-                <li onclick="navToGenerate()"><a class="menu__item" href="#">SKU Creation</a></li>
-                <li onclick="navToFinder()"><a class="menu__item" href="#">SKU Lookup</a></li>
-                <li onclick="navToD365()"><a class="menu__item" href="#">D365 Portal</a></li>
-            </ul>
-        </div>
-    </nav>
+    </div>
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+            <span></span>
+        </label>
 
-    <div class="containerNonHome">
-        <div class="center">
-            <form class="search-container">
-                <label for="search-bar"></label><input type="number" placeholder="Enter SKU" maxlength="30" id="search-bar">
-                <img class="search-icon" src="images/search.webp" alt="">
-            </form>
-            <div class="wrapperGrid">
-                <div class="wrapper">
-                    <div class="survey_options">
-                        <div class="controls">
-                            <h2>Current Data</h2>
-                        </div>
-                        <div class="topContainer">
-                            <div class="centerText">
-                                <label>Type</label>
-                                <p>Markdown</p>
-                            </div>
-                            <div class="centerText">
-                                <label>Effective Date</label>
-                                <p>12/20/2022</p>
-                            </div>
-                        </div>
-                        <label>
-                            <input type="number" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
-                        </label>
+        <ul class="menu__box">
+            <li onclick="navToHome()"><a class="menu__item" href="#">Home</a></li>
+            <li onclick="navToUPC()"><a class="menu__item" href="#">UPC Upload</a></li>
+            <li onclick="navToPricing()"><a class="menu__item" href="#">Pricing Upload</a></li>
+            <li><a class="menu__item" href="#">Vendor Catalog</a></li>
+            <li onclick="navToGenerate()"><a class="menu__item" href="#">SKU Creation</a></li>
+            <li onclick="navToFinder()"><a class="menu__item" href="#">SKU Lookup</a></li>
+            <li onclick="navToD365()"><a class="menu__item" href="#">D365 Portal</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="containerNonHome">
+    <div class="center">
+        <form class="search-container">
+            <label for="search-bar"></label><input type="number" placeholder="Enter SKU" maxlength="30" id="search-bar">
+            <img class="search-icon" src="images/search.webp" alt="">
+        </form>
+        <div class="wrapperGrid">
+            <div class="wrapper">
+                <div class="survey_options">
+                    <div class="controls">
+                        <h2>Current Data</h2>
                     </div>
-                </div>
-                <div class="wrapper">
-                    <div id="survey_options">
-                        <div class="controls">
-                            <h2>New Data</h2>
-                            <div class="controlButtons">
-                                <a href="#" id="add_more_fields"><i class="fa fa-plus"></i><img src="images/plus.webp" alt="Plus Sign"></a>
-                                <a href="#" id="remove_fields"><i class="fa fa-plus"></i><img src="images/minus.webp" alt="Minus Sign"></a>
-                            </div>
+                    <div class="topContainer">
+                        <div class="centerText">
+                            <label>Type</label>
+                            <p>Markdown</p>
                         </div>
+                        <div class="centerText">
+                            <label>Effective Date</label>
+                            <p>12/20/2022</p>
+                        </div>
+                    </div>
+                    <label>
+                        <input type="number" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
+                    </label>
+                </div>
+            </div>
+            <div class="wrapper">
+                <div id="survey_options">
+                    <div class="controls">
+                        <h2>New Data</h2>
+                        <div class="controlButtons">
+                            <a href="#" id="add_more_fields"><i class="fa fa-plus"></i><img src="images/plus.webp" alt="Plus Sign"></a>
+                            <a href="#" id="remove_fields"><i class="fa fa-plus"></i><img src="images/minus.webp" alt="Minus Sign"></a>
+                        </div>
+                    </div>
+                    <form>
                         <div class="topContainer">
                             <div class="centerText">
                                 <label for="changeType">Type</label>
@@ -87,17 +88,19 @@
                         <label>
                             <input type="number" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
                         </label>
-                    </div>
+                    </form>
+
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
-    <script src="js/dynamicTable.js"></script>
-    <footer id="footer">
-        <p>© Lids Inc. 2022. All Rights Reserved.</p>
-    </footer>
+<script src="js/dynamicTable.js"></script>
+<footer id="footer">
+    <p>© Lids Inc. 2022. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
 
