@@ -101,7 +101,7 @@
   .menu__item:hover {
     background-color: var(--LidsGrey);
     color: var(--LidsBlue);
-    border: 1px solid grey;
+    outline: 1px solid grey;
   }
 
 #two {
