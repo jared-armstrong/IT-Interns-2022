@@ -94,12 +94,14 @@
     font-weight: 600;
   
     text-decoration: none;
-  
+
+
     /*transition-duration: .25s;*/
   }
   .menu__item:hover {
     background-color: var(--LidsGrey);
     color: var(--LidsBlue);
+    border: 1px solid grey;
   }
 
 #two {
