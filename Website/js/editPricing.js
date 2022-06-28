@@ -2,15 +2,31 @@
 
 function toggleShowForms() {
 
-    //const searchButton = document.getElementById("search");
-    const formDisplay = document.querySelector(".wrapper");
+    var formDisplay = document.getElementById("formHolder");
 
-    const isHidden = formDisplay.getElementsByClassName.display = "none";
-    if (isHidden) {
-        formDisplay.getElementsByClassName.display = "grid";
-    } else
-        isHidden.display = "none";
+    if (formDisplay.style.display === "none") {
+        formDisplay.style.display = "grid";
+    } else {
+        formDisplay.style.display = "none";
+    }
 
-        //searchButton.addEventListener("click", toggleShowForms);
     
+}
+
+function submitClear() {
+    
+    var txt;
+    if(confirm("Are you sure you would like to make your changes?")) {
+        alert("Changes Made Successfully");
+    } else {
+        alert("Changes Disregarded");
+    }
+
+    var formDisplay = document.getElementById("formHolder");
+
+    if (formDisplay.style.display === "none") {
+        formDisplay.style.display = "grid";
+    } else {
+        formDisplay.style.display = "none";
+    }
 }

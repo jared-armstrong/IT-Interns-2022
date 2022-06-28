@@ -4,7 +4,7 @@
 }
 
 .wrapperGrid {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     width: auto;
     column-gap: 16px;
