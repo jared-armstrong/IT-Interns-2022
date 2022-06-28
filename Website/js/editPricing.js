@@ -1,7 +1,10 @@
-let todDate = Date() + 1;
-document.getElementById("firstDateId").onchange = function () {
-    const input = document.getElementById("secondDateId");
-    input.setAttribute("min", this.todDate);
+function setMinDate() {
+    var tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow = new Date(tomorrow).toISOString().split('T')[0];
+
+    var setMin = document.getElementById("setDate");
+    setMin.min = tomorrow;
 }
 
 function toggleShowForms() {
@@ -44,3 +47,5 @@ function cancelClear() {
         formDisplay.style.display = "grid";
     }
 }
+
+window.onload = setMinDate()
