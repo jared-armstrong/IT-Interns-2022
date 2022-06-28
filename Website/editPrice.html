@@ -42,7 +42,7 @@
             <label for="search-bar"></label><input type="number" placeholder="Enter SKU" maxlength="30" id="search-bar">
             <img onclick="toggleShowForms()" class="search-icon" src="images/search.webp" alt="">
         </form>
-        <div class="wrapperGrid">
+        <div class="wrapperGrid" id="formHolder">
             <div class="wrapper">
                 <div class="survey_options">
                     <div class="controls">
@@ -92,6 +92,9 @@
                     </form>
 
                 </div>
+            </div>
+            <div id="validateButton">
+                <button onclick="submitClear()">Submit Changes</button>
             </div>
         </div>
     </div>
