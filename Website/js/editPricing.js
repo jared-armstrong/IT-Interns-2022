@@ -1,4 +1,8 @@
-
+let todDate = Date() + 1;
+document.getElementById("firstDateId").onchange = function () {
+    const input = document.getElementById("secondDateId");
+    input.setAttribute("min", this.todDate);
+}
 
 function toggleShowForms() {
 

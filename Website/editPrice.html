@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/dynamictable.css">
     <script src="js/navigation.js"></script>
-    <script src="js/editPricing.js"></script>
 </head>
 <body>
 <nav>
     <div class="navgrid">
         <a href="#"><img onclick="navToHome()" src="images/Logo.png" alt=""></a>
-            <h2 id="one">Price Edit</h2>
-            <h2 id="two">PPS</h2>
+        <h2 id="one">Price Edit</h2>
+        <h2 id="two">PPS</h2>
     </div>
     <div class="hamburger-menu">
         <input id="menu__toggle" type="checkbox" />
@@ -58,9 +57,50 @@
                             <p>mm/dd/yyyy</p>
                         </div>
                     </div>
-                    <label>
-                        <input type="number" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
-                    </label>
+                    <div class="form-group">
+                        <label for="PZ1Disp"><abbr title="US">PZ1</abbr></label>
+                        <input type="number" name="PZ1" id="PZ1Disp" class="survey_options" READONLY>
+                    </div>
+                    <div class="form-group">
+                        <label for="PZ2Disp"><abbr title="Canada">PZ2</abbr></label>
+                        <input type="number" name="PZ2" id="PZ2Disp" class="survey_options" READONLY>
+                    </div>
+                    <div class="form-group">
+                        <label for="PZ3Disp"><abbr title="Off-Shore">PZ3</abbr></label>
+                        <input type="number" name="PZ3" id="PZ3Disp" class="survey_options" READONLY>
+                    </div>
+                    <div class="form-group">
+                        <label for="PZ4Disp"><abbr title="Outlet">PZ4</abbr></label>
+                        <input type="number" name="PZ4" id="PZ4Disp" class="survey_options" READONLY>
+                    </div>
+                    <div class="form-group">
+                        <label for="PZ5Disp"><abbr title="Macy's">PZ5</abbr></label>
+                        <input type="number" name="PZ5" id="PZ5Disp" class="survey_options" READONLY>
+                    </div>
+                    <div class="form-group">
+                        <label for="PZ6Disp"><abbr title="Clubhouse">PZ6</abbr></label>
+                        <input type="number" name="PZ6" id="PZ6Disp" class="survey_options" READONLY>
+                    </div>
+                    <div class="form-group">
+                        <label for="PZ40Disp"><abbr title="France">PZ40</abbr></label>
+                        <input type="number" name="PZ40" id="PZ40Disp" class="survey_options" READONLY>
+                    </div>
+                    <div class="form-group">
+                        <label for="PZ41Disp"><abbr title="UK">PZ41</abbr></label>
+                        <input type="number" name="PZ41" id="PZ41Disp" class="survey_options" READONLY>
+                    </div>
+                    <div class="form-group">
+                        <label for="PZ42Disp"><abbr title="Australia">PZ42</abbr></label>
+                        <input type="number" name="PZ42" id="PZ42Disp" class="survey_options" READONLY>
+                    </div>
+                    <div class="form-group">
+                        <label for="PZ43Disp"><abbr title="Germany">PZ43</abbr></label>
+                        <input type="number" name="PZ43" id="PZ43Disp" class="survey_options" READONLY>
+                    </div>
+                    <div class="form-group">
+                        <label for="PZ44Disp"><abbr title="Mexico">PZ44</abbr></label>
+                        <input type="number" name="PZ44" id="PZ44Disp" class="survey_options" READONLY>
+                    </div>
                 </div>
             </div>
             <div class="wrapper">
@@ -83,19 +123,64 @@
                             </div>
                             <div class="centerText">
                                 <label for="setDate">Effective Date</label>
-                                <input type="date" name="survey_options[]" class="survey_options" onfocus="(this.type='date')" id="setDate">
+                                <input type="date" name="survey_options[]" class="survey_options" onfocus="(this.type='date')" id="setDate" min="">
                             </div>
                         </div>
-                        <label>
-                            <input type="number" name="survey_options[]" class="survey_options" size="50" placeholder="Another Field">
-                        </label>
+                        <div class="form-group">
+                            <label for="PZ1"><abbr title="US">PZ1</abbr></label>
+                            <input type="number" name="PZ1" id="PZ1" class="survey_options">
+                        </div>
+                        <div class="form-group">
+                            <label for="PZ2"><abbr title="Canada">PZ2</abbr></label>
+                            <input type="number" name="PZ2" id="PZ2" class="survey_options">
+                        </div>
+                        <div class="form-group">
+                            <label for="PZ3"><abbr title="Off-Shore">PZ3</abbr></label>
+                            <input type="number" name="PZ3" id="PZ3" class="survey_options">
+                        </div>
+                        <div class="form-group">
+                            <label for="PZ4"><abbr title="Outlet">PZ4</abbr></label>
+                            <input type="number" name="PZ4" id="PZ4" class="survey_options">
+                        </div>
+                        <div class="form-group">
+                            <label for="PZ5"><abbr title="Macy's">PZ5</abbr></label>
+                            <input type="number" name="PZ5" id="PZ5" class="survey_options">
+                        </div>
+                        <div class="form-group">
+                            <label for="PZ6"><abbr title="Clubhouse">PZ6</abbr></label>
+                            <input type="number" name="PZ6" id="PZ6" class="survey_options">
+                        </div>
+                        <div class="form-group">
+                            <label for="PZ40"><abbr title="France">PZ40</abbr></label>
+                            <input type="number" name="PZ40" id="PZ40" class="survey_options">
+                        </div>
+                        <div class="form-group">
+                            <label for="PZ41"><abbr title="UK">PZ41</abbr></label>
+                            <input type="number" name="PZ41" id="PZ41" class="survey_options">
+                        </div>
+                        <div class="form-group">
+                            <label for="PZ42"><abbr title="Australia">PZ42</abbr></label>
+                            <input type="number" name="PZ42" id="PZ42" class="survey_options">
+                        </div>
+                        <div class="form-group">
+                            <label for="PZ43"><abbr title="Germany">PZ43</abbr></label>
+                            <input type="number" name="PZ43" id="PZ43" class="survey_options">
+                        </div>
+                        <div class="form-group">
+                            <label for="PZ44"><abbr title="Mexico">PZ44</abbr></label>
+                            <input type="number" name="PZ44" id="PZ44" class="survey_options">
+                        </div>
                     </form>
 
                 </div>
             </div>
             <div id="validateButton">
+<<<<<<< HEAD
                 <button class="formButton" onclick="submitClear()">Submit</button>
                 <button class="formButton" onclick="cancelClear()">Cancel</button>
+=======
+                <input type="submit" onclick="submitClear()" value="Submit Data">
+>>>>>>> 35cc01ad37c468c9ad6c864539c6c865ab4d0e76
             </div>
 
         </div>
@@ -104,6 +189,7 @@
 
 
 <script src="js/dynamicTable.js"></script>
+<script src="js/editPricing.js"></script>
 <footer id="footer">
     <p>© Lids Inc. 2022. All Rights Reserved.</p>
 </footer>

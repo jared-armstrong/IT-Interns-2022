@@ -3,8 +3,12 @@
     padding: 0;
 }
 
+abbr {
+    text-decoration: none;
+}
+
 .wrapperGrid {
-    display: none;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     width: auto;
     column-gap: 16px;
@@ -26,20 +30,32 @@
     scrollbar-gutter: stable;
 }
 
+.wrapper label, .wrapper h2 {
+    user-select: none;
+}
+
 .wrapper input:focus:not([type='date']) {
     transition: 300ms ease-in-out;
     transform: scale(1.01);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-input[type="number"]{
+.form-group {
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+input[type="number"], .PZBox{
     padding: 10px;
     margin: 10px auto;
-    display: block;
+    display: inline;
     border-radius: 5px;
     border: 1px solid lightgrey;
     background: var(--LidsWhite);
-    width: 274px;
+    width: 200px;
     color: black;
 }
 
