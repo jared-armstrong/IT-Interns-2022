@@ -8,7 +8,7 @@ abbr {
 }
 
 .wrapperGrid {
-    display: grid;
+    display: none;
     grid-template-columns: 1fr 1fr;
     width: auto;
     column-gap: 16px;
@@ -214,6 +214,12 @@ input[type="search"]:focus {
     font-size: 16px;
 }
 
+#validateButton {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 .formButton {
     background-color: var(--LidsWhite);
     border-radius: 10px;
