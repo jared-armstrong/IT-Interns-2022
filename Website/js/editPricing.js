@@ -15,6 +15,9 @@ function toggleShowForms() {
     if (formDisplay.style.display === "none" && buttonDisplay.style.display === "none") {
         formDisplay.style.display = "grid";
         buttonDisplay.style.display = "flex";
+    } else if (formDisplay.style.display === "grid" && buttonDisplay.style.display === "flex") {
+        formDisplay.style.display = "grid";
+        buttonDisplay.style.display = "flex";
     } else {
         formDisplay.style.display = "none";
         buttonDisplay.style.display = "none";
