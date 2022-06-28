@@ -198,6 +198,29 @@ input[type="search"]:focus {
     font-size: 16px;
 }
 
+.formButton {
+    background-color: var(--LidsWhite);
+    border-radius: 10px;
+    color: var(--LidsBlue);
+    border-color: var(--LidsBlue);
+    width: 180px;
+    height: 50px;
+    display: grid;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 15px;
+}
+
+.formButton:hover{
+    background-color: var(--LidsBlue);
+    color: var(--LidsWhite);
+    border-color: var(--LidsWhite);
+    cursor: pointer;
+    box-shadow: 15px;
+}
+
 .centerText {
     text-align: center;
 }
