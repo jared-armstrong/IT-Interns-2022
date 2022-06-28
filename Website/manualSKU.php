@@ -1,15 +1,17 @@
 <?php
-//$serverName = "ssdevd365salesautomation.database.windows.net";
-//$connectionInfo = array("Database" => "POC.Product");
-//$conn = sqlsrv_connect($serverName, $connectionInfo);
 
 
-if( $conn ) {
-    echo "Connection established.<br />";
-}else{
-    echo "Connection could not be established.<br />";
-    die( print_r( sqlsrv_errors(), true));
-}
+
+$serverName = "ssdevd365salesautomation.database.windows.net";
+$connectionInfo = array("Database" => "LidsRetailSupply");
+$conn = sqlsrv_connect($serverName, $connectionInfo);
+
+
+if( $conn === false )  
+{  
+     echo "Unable to connect.</br>";  
+     die( print_r( sqlsrv_errors(), true));  
+}  
 
 /* User login ??????? */
 $var_skuid = $_POST['skuid'];
@@ -75,14 +77,12 @@ $var_playerName, $var_logoApp, $var_logoPlace, $var_material1, $var_material1P, 
 
 /*$resultFindSKU =($conn, $tsql2); */
 
-if (sqlsrv_query($conn, $tsql2)) {  
+if (sqlsrv_query($conn, $sqlInsert)) {  
     echo "Statement executed.\n";  
 } else {  
     echo "Error in statement execution.\n";  
     die(print_r(sqlsrv_errors(), true));  
 }  
-
-
 mysqli_close($conn);
 ?>
 
