@@ -117,15 +117,17 @@
 .PZ\&Cost, .materialContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     background-color: var(--LidsGrey);
     width: 60%;
+    height: auto;
     border: 3px solid black;
     border-radius: 15px;
     padding: 10px;
     color: black;
+    overflow: auto;
 }
 .materialContainer {
+    grid-template-rows: repeat(3, 1fr);
     width: 80%;
 }
 
