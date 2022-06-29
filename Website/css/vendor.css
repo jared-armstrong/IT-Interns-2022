@@ -1,0 +1,31 @@
+:root {
+    --LidsBlue: #001E4E;
+    --LidsGrey: #D9D9D9;
+    --LidsWhite: white;
+}
+
+ .vendorTable {
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+    display: grid;
+  }
+  
+  /* (B) EDITABLE TABLE */
+  .editable {
+    border-collapse: collapse;
+  }
+
+  .editable th, .editable td {
+    border: 1px solid #000;
+    padding: 10px;
+  }
+
+  .editable th {
+    color: #fff;
+    background: #000;
+  }
+
+  .editable td.edit {
+    background: #ffe7e7;
+  }
+  

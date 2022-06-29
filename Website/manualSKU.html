@@ -56,11 +56,25 @@
                 </div>
                 <div class="formelement">
                     <label for="vendor">Vendor:</label>
-                    <input type="text" name="vendor" id="vendor">
+                    <select name="vendor">
+                        <option value="Null">None</option>
+                        <option value="ADIDAS">Adidas</option>
+                        <option value="MITCH & NESS">Mitchell & Ness</option>
+                        <option value="NEWE">New Era</option>
+                        <option value="NIKE">Nike</option>
+                        <option value="NORF">North Face</option>
+                    </select>
                 </div>
                 <div class="formelement">
                     <label for="team">Team:</label>
-                    <input type="text" name="team" id="team">
+                    <select name="team">
+                        <option value="Null">None</option>
+                        <option value="Alabama">Alabama</option>
+                        <option value="Cincinnati">Cincinnati</option>
+                        <option value="Duke">Duke Blue Devils</option>
+                        <option value="Florida G">Florida Gators</option>
+                        <option value="Florida St">Florida State Seminoles</option>
+                    </select>
                 </div>
                 <div class="formelement">
                     <label for="brand">Brand:</label>
@@ -108,7 +122,32 @@
                 </div>
                 <div class="formelement">
                     <label for="taxGroup">Tax Group:</label>
-                    <input type="number" name="taxGroup" id="taxGroup">
+                    <select name="taxGroup">
+                        <option value="Null">None</option>
+                        <option value="Apparel-Clothing-Athletic-Bathing Suits">Apparel-Clothing-Athletic-Bathing Suits</option>
+                        <option value="Apparel-Clothing-Athletic-Childrens Clothing">Apparel-Clothing-Athletic-Childrens Clothing</option>
+                        <option value="Apparel-Clothing-Athletic-General Clothing">Apparel-Clothing-Athletic-General Clothing</option>
+                        <option value="Headwear-Clothing-General-General Clothing">Headwear-Clothing-General-General Clothing</option>
+                        <option value="Headwear-Clothing-General-Childrens Clothing">Headwear-Clothing-General-Childrens Clothing</option>
+                        <option value="Novelties-Backpacks">Novelties-Backpacks</option>
+                        <option value="Novelties-Books-Books">Novelties-Books-Books</option>
+                        <option value="Novelties-Candy">Novelties-Candy</option>
+                        <option value="Novelties-Clothing-Athletic-Batting Gloves/Golf Gloves">Novelties-Clothing-Athletic-Batting Gloves/Golf Gloves</option>
+                        <option value="Novelties-Clothing-Athletic-Cleated/Athletic Shoes">Novelties-Clothing-Athletic-Cleated/Athletic Shoes</option>
+                        <option value="Novelties-Clothing-General-Adult Costumes">Novelties-Clothing-General-Adult Costumes</option>
+                        <option value="Novelties-Clothing-General-Belt Buckles">Novelties-Clothing-General-Belt Buckles</option>
+                        <option value="Novelties-Clothing-General-Childrens Costume">Novelties-Clothing-General-Childrens Costume</option>
+                        <option value="Novelties-Clothing-General-Notions">Novelties-Clothing-General-Notions</option>
+                        <option value="Novelties-Footwear/Shoes">Novelties-Footwear/Shoes</option>
+                        <option value="Novelties-General Merchandise-Default">Novelties-General Merchandise-Default</option>
+                        <option value="Novelties-Periodicals-Magazines Newstand Sales">Magazines Newstand Sales</option>
+                        <option value="Customization-Alterations-Embroidering On New Clothing">Customization-Alterations-Embroidering On New Clothing</option>
+                        <option value="Customization-Alterations-Embroidering On Used Clothing">Customization-Alterations-Embroidering On Used Clothing</option>
+                        <option value="Misc.-Club Memberships">Misc.-Club Memberships</option>
+                        <option value="Misc.-General Services-Default">Misc.-General Services-Default</option>
+                        <option value="Misc.-Non-Taxable Products and SVCS-Default">Misc.-Non-Taxable Products and SVCS-Default</option>
+                        <option value="Misc.-Optional Shiping and Handling-FOB Destination">Misc.-Optional Shiping and Handling-FOB Destination</option>
+                    </select>
                 </div>
                 <div class="formelement">
                     <label for="PZ1">Price Zone 1:</label>
@@ -177,20 +216,94 @@
                     <input type="number" name="origin" id="origin">
                 </div>
                 <div class="formelement">
+                    <label for="sizeType">Size Type:</label>
+                    <select name="sizeType">
+                        <option value="Null">None</option>
+                        <option value="32-34-36-38-40-42">32-34-36-38-40-42</option>
+                        <option value="Adjustable">Adjustable</option>
+                        <option value="Balls-Soccer">Balls-Soccer</option>
+                        <option value="Bedding-Blankets">Bedding-Blankets</option>
+                        <option value="Bedding-Comforters">Bedding-Comforters</option>
+                        <option value="Bedding-Sheets">Bedding-Sheets</option>
+                        <option value="Big and Tall">Big and Tall</option>
+                        <option value="Fitted">Fitted</option>
+                        <option value="Footwear">Footwear</option>
+                        <option value="Infant">Infant</option>
+                        <option value="Infant/Tod/Child/Yth">Infant/Tod/Child/Yth</option>
+                        <option value="Jersey Auth">Jersey Auth</option>
+                        <option value="Kids">Kids</option>
+                        <option value="Newborn">Newborn</option>
+                        <option value="One Fit">One Fit</option>
+                        <option value="S/M M/L L/XL">S/M M/L L/XL</option>
+                        <option value="Sized Shorts">Sized Shorts</option>
+                        <option value="Toddler">Toddler</option>
+                        <option value="Womens Apparel">Womens Apparel</option>
+                        <option value="Womens Plus">Womens Plus</option>
+                        <option value="XS S M L XL XXL 3XL">XS S M L XL XXL 3XL</option>
+                        <option value="Youth Fitted">Youth Fitted</option>
+                        </select>
+                </div>
+                <div class="formelement">
                     <label for="gender">Gender:</label>
-                    <input type="number" name="gender" id="gender">
+                    <select name="gender">
+                        <option value="Null">None</option>
+                        <option value="M">Men</option>
+                        <option value="W">Women</option>
+                        <option value="U">Unisex</option>
+                    </select>
                 </div>
                 <div class="formelement">
                     <label for="kidProduct">Kid Product:</label>
-                    <input type="number" name="kidProduct" id="kidProduct">
+                    <select name="kidProduct">
+                        <option value="N">No</option>
+                        <option value="Y">Yes</option>
+                    </select>
+                </div>
+                <div class="formelement">
+                    <label for="ageRange">Age Range:</label>
+                    <select name="ageRange">
+                        <option value="Null">None</option>
+                        <option value="Infant">Infant</option>
+                        <option value="Toddler">Toddler</option>
+                        <option value="Child">Child</option>
+                        <option value="Youth">Youth</option>
+                        <option value="Newborn">NewBorn</option>
+                    </select>
                 </div>
                 <div class="formelement">
                     <label for="keyword1">Keyword 1:</label>
-                    <input type="number" name="keyword1" id="keyword1">
+                    <select name="keyword1">
+                        <option value="Null">None</option>
+                        <option value="merch">Merch</option>
+                        <option value="SP24">SP24</option>
+                        <option value="SP25">SP25</option>
+                        <option value="SP26">SP26</option>
+                        <option value="SP27">SP27</option>
+                        <option value="core">core</option>
+                    </select>
                 </div>
                 <div class="formelement">
                     <label for="keyword2">Keyword 2:</label>
-                    <input type="number" name="keyword2" id="keyword2">
+                    <select name="keyword2">
+                        <option value="Null">None</option>
+                        <option value="merch">Merch</option>
+                        <option value="SP24">SP24</option>
+                        <option value="SP25">SP25</option>
+                        <option value="SP26">SP26</option>
+                        <option value="SP27">SP27</option>
+                        <option value="core">core</option>
+                    </select>
+                </div>
+                <div class="formelement">
+                    <label for="color">Color:</label>
+                    <select name="color">
+                        <option value="Null">None</option>
+                        <option value="B JEWEL">Blue Jewel</option>
+                        <option value="blk">Black</option>
+                        <option value="crim">Crimson</option>
+                        <option value="org">Orange</option>
+                        <option value="gry">Grey</option>
+                    </select>
                 </div>
                 <div class="formelement">
                     <label for="domain">Domain:</label>
