@@ -59,9 +59,8 @@ function cancelClear() {
         alert("Changes Disregarded");
         formDisplay.style.display = "none";
         buttonDisplay.style.display = "none";
-    } else {
-        formDisplay.style.display = "grid";
-        buttonDisplay.style.display = "flex";
+        document.querySelector(".singlePriceForm").reset();
+        document.querySelector(".search-container").reset();
     }
 }
 
