@@ -149,34 +149,7 @@
                     <label for="origin">Origin:</label>
                     <input type="number" name="origin" id="origin">
                 </div>
-                <div class="formelement">
-                    <label for="sizeType">Size Type:</label>
-                    <select name="sizeType" id="sizeType">
-                        <option value="Null">None</option>
-                        <option value="32-34-36-38-40-42">32-34-36-38-40-42</option>
-                        <option value="Adjustable">Adjustable</option>
-                        <option value="Balls-Soccer">Balls-Soccer</option>
-                        <option value="Bedding-Blankets">Bedding-Blankets</option>
-                        <option value="Bedding-Comforters">Bedding-Comforters</option>
-                        <option value="Bedding-Sheets">Bedding-Sheets</option>
-                        <option value="Big and Tall">Big and Tall</option>
-                        <option value="Fitted">Fitted</option>
-                        <option value="Footwear">Footwear</option>
-                        <option value="Infant">Infant</option>
-                        <option value="Infant/Tod/Child/Yth">Infant/Tod/Child/Yth</option>
-                        <option value="Jersey Auth">Jersey Auth</option>
-                        <option value="Kids">Kids</option>
-                        <option value="Newborn">Newborn</option>
-                        <option value="One Fit">One Fit</option>
-                        <option value="S/M M/L L/XL">S/M M/L L/XL</option>
-                        <option value="Sized Shorts">Sized Shorts</option>
-                        <option value="Toddler">Toddler</option>
-                        <option value="Womens Apparel">Womens Apparel</option>
-                        <option value="Womens Plus">Womens Plus</option>
-                        <option value="XS S M L XL XXL 3XL">XS S M L XL XXL 3XL</option>
-                        <option value="Youth Fitted">Youth Fitted</option>
-                        </select>
-                </div>
+
                 <div class="formelement">
                     <label for="gender">Gender:</label>
                     <select name="gender" id="gender">
@@ -228,17 +201,7 @@
                         <option value="core">core</option>
                     </select>
                 </div>
-                <div class="formelement">
-                    <label for="color">Color:</label>
-                    <select name="color" id="color">
-                        <option value="Null">None</option>
-                        <option value="B JEWEL">Blue Jewel</option>
-                        <option value="blk">Black</option>
-                        <option value="crim">Crimson</option>
-                        <option value="org">Orange</option>
-                        <option value="gry">Grey</option>
-                    </select>
-                </div>
+
                 <div class="formelement">
                     <label for="subDiv">Sub Div:</label>
                     <input type="number" name="subDiv" id="subDiv">
@@ -267,13 +230,56 @@
 
 
                 <div class="materialContainer">
+                    <div class="color">
+                        <div class="formelement">
+                            <label for="color">Color:</label>
+                            <select name="color" id="color">
+                                <option value="Null">None</option>
+                                <option value="B JEWEL">Blue Jewel</option>
+                                <option value="blk">Black</option>
+                                <option value="crim">Crimson</option>
+                                <option value="org">Orange</option>
+                                <option value="gry">Grey</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="size">
+                    <div class="formelement">
+                            <label for="sizeType">Size Type:</label>
+                            <select name="sizeType" id="sizeType">
+                                <option value="Null">None</option>
+                                <option value="32-34-36-38-40-42">32-34-36-38-40-42</option>
+                                <option value="Adjustable">Adjustable</option>
+                                <option value="Balls-Soccer">Balls-Soccer</option>
+                                <option value="Bedding-Blankets">Bedding-Blankets</option>
+                                <option value="Bedding-Comforters">Bedding-Comforters</option>
+                                <option value="Bedding-Sheets">Bedding-Sheets</option>
+                                <option value="Big and Tall">Big and Tall</option>
+                                <option value="Fitted">Fitted</option>
+                                <option value="Footwear">Footwear</option>
+                                <option value="Infant">Infant</option>
+                                <option value="Infant/Tod/Child/Yth">Infant/Tod/Child/Yth</option>
+                                <option value="Jersey Auth">Jersey Auth</option>
+                                <option value="Kids">Kids</option>
+                                <option value="Newborn">Newborn</option>
+                                <option value="One Fit">One Fit</option>
+                                <option value="S/M M/L L/XL">S/M M/L L/XL</option>
+                                <option value="Sized Shorts">Sized Shorts</option>
+                                <option value="Toddler">Toddler</option>
+                                <option value="Womens Apparel">Womens Apparel</option>
+                                <option value="Womens Plus">Womens Plus</option>
+                                <option value="XS S M L XL XXL 3XL">XS S M L XL XXL 3XL</option>
+                                <option value="Youth Fitted">Youth Fitted</option>
+                            </select>
+                        </div>
+                    </div>
                     <div class="mat&Percent">
                         <div class="formelement">
-                            <label for="material1">Material 1:</label>
+                            <label for="material1">Material 6:</label>
                             <input type="number" name="material1" id="material1">
                         </div>
                         <div class="formelement">
-                            <label for="material1P"><input type="number" name="material1P" id="material1P" placeholder="%"></label>
+                            <label for="material1P"><input type="number" name="material1P" id="material1P" size="3" class="percent" placeholder="%" min="0" max="100"></label>
                         </div>
                     </div>
                     <div class="mat&Percent">
@@ -282,7 +288,7 @@
                             <input type="number" name="material2" id="material2">
                         </div>
                         <div class="formelement">
-                            <label for="material2P"><input type="number" name="material2P" id="material2P" placeholder="%"></label>
+                            <label for="material2P"><input type="number" name="material2P" id="material2P" size="3" class="percent" placeholder="%" min="0" max="100"></label>
                         </div>
                     </div>
                     <div class="mat&Percent">
@@ -291,7 +297,7 @@
                             <input type="number" name="material3" id="material3">
                         </div>
                         <div class="formelement">
-                            <label for="material3P"><input type="number" name="material3P" id="material3P" placeholder="%"></label>
+                            <label for="material3P"><input type="number" name="material3P" id="material3P" size="3" class="percent" placeholder="%" min="0" max="100" maxlength="3"></label>
                         </div>
                     </div>
                 </div>

@@ -80,6 +80,10 @@
 
 
 
+
+
+
+
 .manualSKUForm {
     align-items: center;
     justify-content: center;
@@ -110,8 +114,40 @@
 }
 
 
-.PZ\&Cost, .mat\&Percent {
-    width: 60%;
+.PZ\&Cost, .materialContainer {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background-color: var(--LidsGrey);
+    width: 60%;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    color: black;
+}
+.materialContainer {
+    width: 80%;
+}
+
+.mat\&Percent {
+    grid-column: 1;
+    display: flex;
+}
+
+.color {
+    grid-column: 2;
+    grid-row: 1;
+}
+size {
+    grid-column: 2;
+    grid-row: 2;
+}
+.color select, size select {
+    width: 250px;
+}
+.mat\&Percent input:not(.percent) {
+    width: 300px;
+}
+.mat\&Percent input:is(.percent){
+    width: 50px;
 }
