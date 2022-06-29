@@ -111,12 +111,16 @@
 }
 .manualSKUForm input, .manualSKUForm select {
     margin: 0 auto;
+    height: 25px;
 }
 
 .uploadBtn {
     width: auto;
 }
 
+.containerNonHome, .manualSKUForm {
+    overflow: auto;
+}
 
 .PZ\&Cost, .misc, .materialContainer, .demo, .keywordContainer, .vendorContainer, .productDetails, .shippingContainer, .logo {
     display: grid;
@@ -135,9 +139,11 @@
     grid-template-columns: 1fr;
     width: 35%;
 }
+.vendorContainer, .keywordContainer {
+    width: 400px;
+}
 .materialContainer {
     grid-template-rows: repeat(3, 1fr);
-    width: 70%;
 }
 .PZ\&Cost {
     width: 500px;
@@ -163,6 +169,9 @@
 .manualSKUForm select, .vendorContainer input {
     width: 250px;
 }
+.manualSKUForm select, .manualSKUForm input {
+    margin-bottom: 8px;
+}
 .productDetails select, .misc select {
     width: 300px;
 }
@@ -171,4 +180,44 @@
 }
 .mat\&Percent input:is(.percent){
     width: 50px;
+}
+
+.group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: 0 auto;
+    overflow: auto;
+}
+.group .vendorContainer, .group .keywordContainer {
+    width: auto;
+}
+.threeGroup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    margin: 0 auto;
+    padding-right: 20px;
+    width: 80%;
+    overflow: auto;
+}
+.containLogoDemo {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.threeGroup > .mat\&Percent {
+    grid-column: 1;
+    grid-row: 1 / 2;
+}
+.threeGroup .demo, .threeGroup .logo, .threeGroup .mat\&Percent {
+    width: 400px;
+}
+.SubmitForm {
+    text-align: center;
+}
+.SubmitForm input {
+    width: 200px;
+    height: 40px;
+
 }
