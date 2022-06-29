@@ -1,3 +1,9 @@
+:root {
+    --LidsBlue: #001E4E;
+    --LidsGrey: #D9D9D9;
+    --LidsWhite: white;
+}
+
 
 .Block1, .Block2 {
     align-items: center;
@@ -31,4 +37,41 @@
 
 .uploadBtn {
     width: auto;
+}
+
+.queryButton {
+    width: 150px;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-color: var(--LidsGrey);
+    background-color: var(--LidsWhite);
+    color: var(--LidsBlue);
+}
+
+.queryButton:hover {
+    background-color: var(--LidsBlue);
+    border-color: var(--LidsWhite);
+    color: var(--LidsWhite);
+    cursor: pointer;
+}
+
+.clearQuery {
+    width: 150px;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border-color: var(--LidsGrey);
+    background-color: var(--LidsWhite);
+    color: var(--LidsBlue);
+}
+
+
+.clearQuery:hover {
+    background-color: var(--LidsBlue);
+    border-color: var(--LidsWhite);
+    color: var(--LidsWhite);
+    cursor: pointer;
 }
