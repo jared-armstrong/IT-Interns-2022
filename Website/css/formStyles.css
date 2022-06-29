@@ -87,7 +87,6 @@
 .manualSKUForm {
     align-items: center;
     justify-content: center;
-    height: 300px;
     width: 80%;
 }
 .manualSKUForm form {
@@ -107,29 +106,46 @@
     display: grid;
     grid-template-columns: .5fr 1fr;
 }
-
+.manualSKUForm label {
+    text-align: left;
+}
+.manualSKUForm input, .manualSKUForm select {
+    margin: 0 auto;
+}
 
 .uploadBtn {
     width: auto;
 }
 
 
-.PZ\&Cost, .materialContainer {
+.PZ\&Cost, .misc, .materialContainer, .demo, .keywordContainer, .vendorContainer, .productDetails, .shippingContainer, .logo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--LidsGrey);
-    width: 60%;
+    width: 80%;
     height: auto;
     border: 3px solid black;
     border-radius: 15px;
     padding: 10px;
+    margin: 5px auto;
     color: black;
     overflow: auto;
 }
+.keywordContainer, .vendorContainer, .logo, .demo {
+    grid-template-columns: 1fr;
+    width: 35%;
+}
 .materialContainer {
     grid-template-rows: repeat(3, 1fr);
-    width: 80%;
+    width: 70%;
 }
+.PZ\&Cost {
+    width: 500px;
+}
+.PZ\&Cost input {
+    width: 100px;
+}
+
 
 .mat\&Percent {
     grid-column: 1;
@@ -140,14 +156,17 @@
     grid-column: 2;
     grid-row: 1;
 }
-size {
+.size {
     grid-column: 2;
     grid-row: 2;
 }
-.color select, size select {
+.manualSKUForm select, .vendorContainer input {
     width: 250px;
 }
-.mat\&Percent input:not(.percent) {
+.productDetails select, .misc select {
+    width: 300px;
+}
+.mat\&Percent input:not(.percent), .productDetails input, .misc input, .shippingContainer input, .demo input {
     width: 300px;
 }
 .mat\&Percent input:is(.percent){
