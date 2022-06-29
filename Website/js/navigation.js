@@ -37,3 +37,7 @@ function navToMassPrice() {
 function navToD365() {
     window.open("https://lidsd365test.sandbox.operations.dynamics.com/");
 }
+
+function navToVendor() {
+    window.location.href = "vendorCatalog.html";
+}
