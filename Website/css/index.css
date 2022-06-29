@@ -5,6 +5,12 @@
     --LidsWhite: white;
 }
 
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
 body {
     font-family: sans-serif;
     margin: 0;

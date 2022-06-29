@@ -45,16 +45,14 @@
     width: 80%;
 }
 .manualSKUForm form {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%/1, max(300px, 100%/3)), 1fr));
-    width: 80%;
+    width: auto;
     padding: 16px;
     max-width: 1280px;
     border: 2px solid black;
     margin-left: auto;
     margin-right: auto;
-    background-color: #001E4E;
-    color: #D9D9D9;
+    background-color: var(--LidsBlue);
+    color: var(--LidsWhite);
 }
 .manualSKUForm label {
     padding-left: 10px;
@@ -63,11 +61,15 @@
     display: grid;
     grid-template-columns: .5fr 1fr;
 }
-.manualSKUForm .SubmitForm {
-    grid-row-end: 1000;
-    grid-column: 1;
-}
+
 
 .uploadBtn {
     width: auto;
+}
+
+
+.PZ\&Cost, .mat\&Percent {
+    width: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
