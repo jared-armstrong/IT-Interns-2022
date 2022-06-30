@@ -29,29 +29,35 @@ if (sqlsrv_query($conn, $tsql2)) {
 /* Checking File Error START */
 
 /*FILE HANDLING  */
-$target_file = fopen("test.csv", "r");
+
 try {
    
+    if(file_exists("testfile.txt")){
+        $myfile = fopen("test.csv", "r");
+    }else{
+        throw new RuntimeError("Cannot Open File");
+    }
+
     // Undefined | Multiple Files | $_FILES Corruption Attack
     // If this request falls under any of them, treat it invalid.
     $finfo = finfo_open(FILEINFO_MIME_TYPE); // Return MIME type
-        echo finfo_file($finfo, $filename);
+    echo finfo_file($finfo, $filename);
         //if( finfo_file($finfo, $filename)) !== ''
     finfo_close($finfo);
 
 
+//Check Web server Upload Load does not exceed amount
 
-    // You should also check filesize here.
     if ($_FILES['upfile']['size'] > 1000000) {
         throw new RuntimeException('Exceeded filesize limit.');
     }
 
 
     // You should name it uniquely.
-    // DO NOT USE $_FILES['upfile']['name'] WITHOUT ANY VALIDATION !!
     // On this example, obtain safe unique name from its binary data.
     if (!move_uploaded_file(
-        $_FILES['upfile']['tmp_name'],
+        // UPLOAD SUCCESS?
+        $_FILES['uploadedFiles']['cur_file'],
         sprintf('./uploads/%s.%s',
             sha1_file($_FILES['upfile']['tmp_name']),
             $ext
@@ -72,16 +78,12 @@ try {
 
 
 /* FILE PROCESS BEGIN */
-if(file_exists("testfile.txt")){
-    $myfile = fopen("test.csv", "r") or die("Unable to open file!");
-}
-$myfile = fopen("test.csv", "r") or die("Unable to open file!");
-
-while (($line = fgetcsv($myfile)) !== FALSE) {
+while (($line = fgetcsv($myfile, null)) !== FALSE) {
     //$line is an array of the csv elements
-
     print_r($line);
 }
+
+
 
 /*
 Buyer sheet Processing. Assuming CSV.
@@ -91,9 +93,10 @@ ______________________________________
 Assumptions: CSV file format following the template sheet, 
 empty boxes are just double commas,
 endline characters are end of ROW,
-
-
 */
+
+
+
 
 
 /* INPUT ARRAY DATA STRUCTURE */
