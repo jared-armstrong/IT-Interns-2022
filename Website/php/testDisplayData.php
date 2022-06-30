@@ -13,7 +13,7 @@
 
     $count = 0;
     // Fetching data from csv file row by row
-    while (($data = fgetcsv($file)) !== false) {
+    while (($data = fgetcsv($file, 1000, ",")) !== false) {
 
         // HTML tag for placing in row format
         echo "<tr>";
