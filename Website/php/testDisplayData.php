@@ -36,7 +36,7 @@
 </html>
 
 <style>
-    div {background-color: powderblue;
+    .container {background-color: powderblue;
         overflow: auto;
         width: 80%;
         margin: 0 auto;}
