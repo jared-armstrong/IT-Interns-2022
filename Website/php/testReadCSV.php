@@ -9,7 +9,7 @@ $rowLength = file('test.csv');
 $flag = true;
 
 // $line is an array of the csv elements
-while (($line = fgetcsv($myfile)) !== FALSE) {
+while (($line = fgetcsv($myfile, 1000, ",")) !== FALSE) {
 
     // Initialize on reiteration for nested while to function
     $key = 0;
