@@ -79,11 +79,29 @@ try {
 
 
 /* FILE PROCESS BEGIN */
-while (($line = fgetcsv($myfile, null)) !== FALSE) {
-    //$line is an array of the csv elements
-    print_r($line);
-}
+while (($line = fgetcsv($myfile)) !== FALSE) {
 
+    // Initialize on reiteration for nested while to function
+    $key = 0;
+
+    // Skips first $line call of $myfile
+    if($flag) { $flag = false; continue; }
+
+    // Get total number of columns
+    $colLength = count($line);
+
+    // Individually grabs every value of a $line
+    while ($key < $colLength) {
+        // Not actual functionality. Needs to append to array for SQL statement
+        echo $line[$key];
+        $key++;
+
+        // Use to break lines. Only useful for testing in console
+        if ($key == ($colLength)) {
+            echo "\n";
+        }
+    }
+}
 
 
 /*

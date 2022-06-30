@@ -1,6 +1,6 @@
 <?php
 
-$myfile = fopen("test.csv", "r") or die("Unable to open file!");
+$myfile = fopen("php\\test.csv", "r") or die("Unable to open file!");
 
 // Get total number of rows
 $rowLength = file('test.csv');
