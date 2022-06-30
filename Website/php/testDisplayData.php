@@ -2,45 +2,48 @@
 <html lang="">
 
 <body>
-    <h1>DISPLAY DATA PRESENT IN CSV</h1>
-    <h3>Displaying Table: </h3>
+<h1>DISPLAY DATA PRESENT IN CSV</h1>
+<h3>Displaying Table: </h3>
 
+<div class="container">
     <?php
-    echo "<html><body><table>\n\n";
-
-    // Open a file
-    $file = fopen("test.csv", "r") or die("ERROR OPENING DATA");;
-
-    $count = 0;
-    // Fetching data from csv file row by row
-    while (($data = fgetcsv($file, 1000, ",")) !== false) {
-
-        // HTML tag for placing in row format
-        echo "<tr>";
-
-        foreach ($data as $i) {
-
-            echo "<td>" . htmlspecialchars($i)
-                . "</td>";
-
+    $handle = fopen("test.csv", "r");
+    echo '<table>';
+    //display header row if true
+    if ("test.csv") {
+        $csvcontents = fgetcsv($handle);
+        echo '<tr>';
+        foreach ($csvcontents as $headercolumn) {
+            echo "<th>$headercolumn</th>";
         }
-        echo "</tr> \n";
-
+        echo '</tr>';
     }
-
-    // Closing the file
-    fclose($file);
-
-    echo "\n</table></body></html>";
+    // displaying contents
+    while ($csvcontents = fgetcsv($handle)) {
+        echo '<tr>';
+        foreach ($csvcontents as $column) {
+            echo "<td>$column</td>";
+        }
+        echo '</tr>';
+    }
+    echo '</table>';
+    fclose($handle);
     ?>
+</div>
+
 </body>
 
 </html>
 
 <style>
-    body {background-color: powderblue;}
-    h1   {color: blue;}
-    p    {color: red;}
+    .container {background-color: powderblue;
+        overflow: auto;
+        width: 80%;
+        margin: 0 auto;}
+    h1   {color: blue;
+        text-align: center}
+    h3    {color: red;
+        text-align: center}
     td {background-color: blue;
         border: 3px solid black;}
 
