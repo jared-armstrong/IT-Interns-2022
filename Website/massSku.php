@@ -74,8 +74,6 @@ try {
 /* FILE PROCESS BEGIN */
 if(file_exists("testfile.txt")){
     $myfile = fopen("test.csv", "r") or die("Unable to open file!");
-}else{
-    echo
 }
 $myfile = fopen("test.csv", "r") or die("Unable to open file!");
 
@@ -158,12 +156,8 @@ $var_trackInventory,
 
 
 
-
-
-
 fclose($target_file);
 fclose($myfile);
-
 mysqli_close($conn);
 
 
