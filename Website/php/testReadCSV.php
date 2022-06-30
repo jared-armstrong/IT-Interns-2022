@@ -33,5 +33,16 @@ while (($line = fgetcsv($myfile)) !== FALSE) {
     }
 }
 
+/*
+Buyer sheet Processing. Assuming CSV.
+______________________________________
+
+
+Assumptions: CSV file format following the template sheet, 
+empty boxes are just double commas,
+endline characters are end of ROW,
+
+
+*/
 
 fclose($myfile);
