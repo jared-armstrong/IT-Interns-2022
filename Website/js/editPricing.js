@@ -23,7 +23,6 @@ function toggleShowForms() {
         buttonDisplay.style.display = "none";
     }
 
-    
 }
 
 function submitClear() {
