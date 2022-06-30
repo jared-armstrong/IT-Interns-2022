@@ -1,5 +1,7 @@
 <?php
-$myfile = fopen("test.csv", "r") or die("Unable to open file!");
+
+
+$myfile = fopen("test2.csv", "r") or die("Unable to open file!");
 
 $count = 0;
 $key = 0;
@@ -29,20 +31,9 @@ while (($line = fgetcsv($myfile)) !== FALSE) {
         }
     }
 
+    // Used to ensure first line of csv is skipped (header)
+    // For some reason while loop testing for $count <> 0 didn't work
     for ($count = 0; $count < 1; $count++) {
     }
 }
-
-/*
-Buyer sheet Processing. Assuming CSV.
-______________________________________
-
-
-Assumptions: CSV file format following the template sheet, 
-empty boxes are just double commas,
-endline characters are end of ROW,
-
-
-*/
-
 fclose($myfile);
