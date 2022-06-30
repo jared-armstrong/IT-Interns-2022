@@ -12,10 +12,8 @@ if($conn == false){
   die(print_r(sqlsrv_errors(), true));
 }
 
-/* User login ??????? */
-$var_SKU = ['form-findSKU'];
-$tsql2 = "SELECT * FROM Product AS p WHERE p.SKUID = '$var_SKU' ";
-/*$resultFindSKU =($conn, $tsql2); */
+//$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+// $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 
 if (sqlsrv_query($conn, $tsql2)) {  
     echo "Statement executed.\n";  
@@ -28,9 +26,55 @@ if (sqlsrv_query($conn, $tsql2)) {
 /*CONNECTION END*/
 
 
+/* Checking File Error START */
+
+/*FILE HANDLING  */
+$target_file = fopen("test.csv", "r");
+try {
+   
+    // Undefined | Multiple Files | $_FILES Corruption Attack
+    // If this request falls under any of them, treat it invalid.
+    $finfo = finfo_open(FILEINFO_MIME_TYPE); // Return MIME type
+        echo finfo_file($finfo, $filename);
+        //if( finfo_file($finfo, $filename)) !== ''
+    finfo_close($finfo);
+
+
+
+    // You should also check filesize here.
+    if ($_FILES['upfile']['size'] > 1000000) {
+        throw new RuntimeException('Exceeded filesize limit.');
+    }
+
+
+    // You should name it uniquely.
+    // DO NOT USE $_FILES['upfile']['name'] WITHOUT ANY VALIDATION !!
+    // On this example, obtain safe unique name from its binary data.
+    if (!move_uploaded_file(
+        $_FILES['upfile']['tmp_name'],
+        sprintf('./uploads/%s.%s',
+            sha1_file($_FILES['upfile']['tmp_name']),
+            $ext
+        )
+    )) {
+        throw new RuntimeException('Failed to move uploaded file.');
+    }
+
+    echo 'File is uploaded successfully.';
+
+} catch (RuntimeException $e) {
+
+    echo $e->getMessage();
+
+}
+
+
 
 
 /* FILE PROCESS BEGIN */
+if(file_exists("testfile.txt")){
+    $myfile = fopen("test.csv", "r") or die("Unable to open file!");
+}
 $myfile = fopen("test.csv", "r") or die("Unable to open file!");
 
 while (($line = fgetcsv($myfile)) !== FALSE) {
@@ -108,17 +152,12 @@ $var_company403Cost,
 $var_company400Cost,
 $var_company900Cost,
 $var_trackInventory,
-)
+);
 
 
 
-
-
-
-
+fclose($target_file);
 fclose($myfile);
-
-
 mysqli_close($conn);
 
 
