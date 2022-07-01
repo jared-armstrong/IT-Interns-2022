@@ -36,17 +36,38 @@
 </html>
 
 <style>
-    .container {background-color: powderblue;
+    /* Houses all color variables for page color palette */
+    :root {
+        --LidsBlue: #001E4E;
+        --LidsGrey: #D9D9D9;
+        --LidsWhite: white;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+        scrollbar-gutter: auto;
+    }
+
+    body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+        width: auto;
+        background-color: var(--LidsGrey);
+    }
+    .container {background-color: var(--LidsBlue);
         overflow: auto;
         width: 80%;
-        height: 600px;
+        height: 700px;
         margin: 0 auto;}
     h1   {color: blue;
         text-align: center}
     h3    {color: red;
         text-align: center}
-    td {background-color: blue;
-        border: 3px solid black;}
+    th {color: var(--LidsWhite)}
+    td {background-color: var(--LidsGrey)}
 
 </style>
 
