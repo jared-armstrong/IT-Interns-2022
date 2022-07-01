@@ -100,19 +100,7 @@ a {
 }
 
 
-/* Sticky footer code */
-body {
-    min-height: 100vh;
-}
-#footer {
-    position: sticky;
-    display: flex;
-    top: 100%;
-    height: 40px;
-    justify-content: center;
-    align-items: flex-start;
-    padding-bottom: 15px;
-}
+
 
 
 /* Fixes display flex issue at small viewports.. 
