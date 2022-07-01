@@ -63,11 +63,13 @@
         height: 700px;
         margin: 0 auto;}
     h1   {color: blue;
-        text-align: center}
+        text-align: center;}
     h3    {color: red;
         text-align: center}
-    th {color: var(--LidsWhite)}
-    td {background-color: var(--LidsGrey)}
+    th {color: var(--LidsWhite);}
+    td {background-color: var(--LidsGrey);
+        padding: 5px;
+    width: -moz-fit-content}
 
 </style>
 
