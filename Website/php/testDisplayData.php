@@ -39,6 +39,7 @@
     .container {background-color: powderblue;
         overflow: auto;
         width: 80%;
+        height: 600px;
         margin: 0 auto;}
     h1   {color: blue;
         text-align: center}

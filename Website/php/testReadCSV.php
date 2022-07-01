@@ -18,13 +18,14 @@ while (($line = fgetcsv($myfile, 1000, ",")) !== FALSE) {
     // Skips first $line call of $myfile
     if($flag) { $flag = false; continue; }
 
+
     // Individually grabs every value of a $line
     while ($key < $colLength) {
         // Not actual functionality. Needs to append to array for SQL statement
         echo $line[$key];
         $key++;
         // Use to break lines. Only useful for testing in console
-        if ($key == ($colLength)) {
+        if ($key == $colLength) {
             echo "\n";
         }
     }
