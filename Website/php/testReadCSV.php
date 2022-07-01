@@ -1,9 +1,7 @@
 <?php
 
+// Open file to process
 $myfile = fopen("C:\Users\henkeh\Desktop\gest2.csv", "r") or die("Unable to open file!");
-
-// Get total number of rows
-//$rowLength = file('test.csv');
 
 // Flag is used to skip first row in csv (header)
 $flag = true;
@@ -14,11 +12,11 @@ while (($line = fgetcsv($myfile, 1000, ",")) !== FALSE) {
     // Initialize on reiteration for nested while to function
     $key = 0;
 
+    // Get length of column for iteration
+    $colLength = count($line);
+
     // Skips first $line call of $myfile
     if($flag) { $flag = false; continue; }
-
-    // Get total number of columns
-    $colLength = count($line);
 
     // Individually grabs every value of a $line
     while ($key < $colLength) {
